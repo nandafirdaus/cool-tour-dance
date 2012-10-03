@@ -1,0 +1,49 @@
+D:\Project\Visual Studio 2010\Kinect\C#\KinectWpfViewers\bin\Debug\Microsoft.Samples.Kinect.WpfViewers.dll
+D:\Project\Visual Studio 2010\Kinect\C#\KinectWpfViewers\bin\Debug\Microsoft.Samples.Kinect.WpfViewers.pdb
+D:\Project\Visual Studio 2010\Kinect\C#\KinectWpfViewers\obj\Debug\KinectSettings.baml
+D:\Project\Visual Studio 2010\Kinect\C#\KinectWpfViewers\obj\Debug\KinectSensorChooser.g.cs
+D:\Project\Visual Studio 2010\Kinect\C#\KinectWpfViewers\obj\Debug\KinectAudioViewer.g.cs
+D:\Project\Visual Studio 2010\Kinect\C#\KinectWpfViewers\obj\Debug\KinectDepthViewer.g.cs
+D:\Project\Visual Studio 2010\Kinect\C#\KinectWpfViewers\obj\Debug\KinectColorViewer.g.cs
+D:\Project\Visual Studio 2010\Kinect\C#\KinectWpfViewers\obj\Debug\KinectDiagnosticViewer.g.cs
+D:\Project\Visual Studio 2010\Kinect\C#\KinectWpfViewers\obj\Debug\KinectSettings.g.cs
+D:\Project\Visual Studio 2010\Kinect\C#\KinectWpfViewers\obj\Debug\KinectSkeletonViewer.g.cs
+D:\Project\Visual Studio 2010\Kinect\C#\KinectWpfViewers\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Project\Visual Studio 2010\Kinect\C#\KinectWpfViewers\obj\Debug\Microsoft.Samples.Kinect.WpfViewers_MarkupCompile.cache
+D:\Project\Visual Studio 2010\Kinect\C#\KinectWpfViewers\obj\Debug\Microsoft.Samples.Kinect.WpfViewers_MarkupCompile.lref
+D:\Project\Visual Studio 2010\Kinect\C#\KinectWpfViewers\obj\Debug\KinectSensorChooser.baml
+D:\Project\Visual Studio 2010\Kinect\C#\KinectWpfViewers\obj\Debug\KinectAudioViewer.baml
+D:\Project\Visual Studio 2010\Kinect\C#\KinectWpfViewers\obj\Debug\KinectDepthViewer.baml
+D:\Project\Visual Studio 2010\Kinect\C#\KinectWpfViewers\obj\Debug\KinectColorViewer.baml
+D:\Project\Visual Studio 2010\Kinect\C#\KinectWpfViewers\obj\Debug\KinectDiagnosticViewer.baml
+D:\Project\Visual Studio 2010\Kinect\C#\KinectWpfViewers\obj\Debug\KinectSkeletonViewer.baml
+D:\Project\Visual Studio 2010\Kinect\C#\KinectWpfViewers\obj\Debug\Microsoft.Samples.Kinect.WpfViewers.g.resources
+D:\Project\Visual Studio 2010\Kinect\C#\KinectWpfViewers\obj\Debug\Microsoft.Samples.Kinect.WpfViewers.Properties.Resources.resources
+D:\Project\Visual Studio 2010\Kinect\C#\KinectWpfViewers\obj\Debug\Microsoft.Samples.Kinect.WpfViewers.dll
+D:\Project\Visual Studio 2010\Kinect\C#\KinectWpfViewers\obj\Debug\Microsoft.Samples.Kinect.WpfViewers.pdb
+D:\Project\Visual Studio 2010\Kinect\C#\KinectWpfViewers\obj\Debug\Microsoft.Samples.Kinect.WpfViewers.csproj.GenerateResource.Cache
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\DataBuilder\KinectWpfViewers\bin\Debug\Microsoft.Samples.Kinect.WpfViewers.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\DataBuilder\KinectWpfViewers\bin\Debug\Microsoft.Samples.Kinect.WpfViewers.pdb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\DataBuilder\KinectWpfViewers\obj\Debug\Microsoft.Samples.Kinect.WpfViewers.csprojResolveAssemblyReference.cache
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\DataBuilder\KinectWpfViewers\obj\Debug\KinectSettings.baml
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\DataBuilder\KinectWpfViewers\obj\Debug\KinectSensorChooser.g.cs
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\DataBuilder\KinectWpfViewers\obj\Debug\KinectAudioViewer.g.cs
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\DataBuilder\KinectWpfViewers\obj\Debug\KinectDepthViewer.g.cs
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\DataBuilder\KinectWpfViewers\obj\Debug\KinectColorViewer.g.cs
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\DataBuilder\KinectWpfViewers\obj\Debug\KinectDiagnosticViewer.g.cs
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\DataBuilder\KinectWpfViewers\obj\Debug\KinectSettings.g.cs
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\DataBuilder\KinectWpfViewers\obj\Debug\KinectSkeletonViewer.g.cs
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\DataBuilder\KinectWpfViewers\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\DataBuilder\KinectWpfViewers\obj\Debug\Microsoft.Samples.Kinect.WpfViewers_MarkupCompile.cache
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\DataBuilder\KinectWpfViewers\obj\Debug\Microsoft.Samples.Kinect.WpfViewers_MarkupCompile.lref
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\DataBuilder\KinectWpfViewers\obj\Debug\KinectSensorChooser.baml
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\DataBuilder\KinectWpfViewers\obj\Debug\KinectAudioViewer.baml
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\DataBuilder\KinectWpfViewers\obj\Debug\KinectDepthViewer.baml
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\DataBuilder\KinectWpfViewers\obj\Debug\KinectColorViewer.baml
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\DataBuilder\KinectWpfViewers\obj\Debug\KinectDiagnosticViewer.baml
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\DataBuilder\KinectWpfViewers\obj\Debug\KinectSkeletonViewer.baml
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\DataBuilder\KinectWpfViewers\obj\Debug\Microsoft.Samples.Kinect.WpfViewers.g.resources
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\DataBuilder\KinectWpfViewers\obj\Debug\Microsoft.Samples.Kinect.WpfViewers.Properties.Resources.resources
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\DataBuilder\KinectWpfViewers\obj\Debug\Microsoft.Samples.Kinect.WpfViewers.csproj.GenerateResource.Cache
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\DataBuilder\KinectWpfViewers\obj\Debug\Microsoft.Samples.Kinect.WpfViewers.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\DataBuilder\KinectWpfViewers\obj\Debug\Microsoft.Samples.Kinect.WpfViewers.pdb
