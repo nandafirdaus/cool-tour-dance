@@ -1,3 +1,0 @@
-D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclexContent\obj\x86\Debug\GameNuclexContent.contentprojResolveAssemblyReference.cache
-D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclexContent\obj\x86\Debug\GameNuclexContent.contentprojResolveAssemblyReference.cache
-D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclexContent\obj\x86\Debug\GameNuclexContent.contentprojResolveAssemblyReference.cache
