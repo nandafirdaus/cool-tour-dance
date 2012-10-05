@@ -389,6 +389,91 @@
       <Extra>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Play\Tari Lenggang Nyai\video.wmv</Extra>
       <Time>2012-09-29T11:39:26+07:00</Time>
     </Item>
+    <Item>
+      <Source>data\Dance\Learn\Tari Lenggang Nyai\01\video.wmv</Source>
+      <Name>data\Dance\Learn\Tari Lenggang Nyai\01\video</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\01\video.xnb</Output>
+      <Extra>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\01\video.wmv</Extra>
+      <Time>2012-09-15T11:54:56.2299379+07:00</Time>
+    </Item>
+    <Item>
+      <Source>data\Dance\Learn\Tari Lenggang Nyai\02\video.wmv</Source>
+      <Name>data\Dance\Learn\Tari Lenggang Nyai\02\video</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\02\video.xnb</Output>
+      <Extra>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\02\video.wmv</Extra>
+      <Time>2012-09-15T11:54:56.2299379+07:00</Time>
+    </Item>
+    <Item>
+      <Source>data\Dance\Learn\Tari Lenggang Nyai\03\video.wmv</Source>
+      <Name>data\Dance\Learn\Tari Lenggang Nyai\03\video</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\03\video.xnb</Output>
+      <Extra>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\03\video.wmv</Extra>
+      <Time>2012-09-15T11:54:56.2299379+07:00</Time>
+    </Item>
+    <Item>
+      <Source>data\Dance\Learn\Tari Lenggang Nyai\04\video.wmv</Source>
+      <Name>data\Dance\Learn\Tari Lenggang Nyai\04\video</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\04\video.xnb</Output>
+      <Extra>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\04\video.wmv</Extra>
+      <Time>2012-09-15T11:54:56.2299379+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\MainMenu\btn_petunjuk.png</Source>
+      <Name>image\MainMenu\btn_petunjuk</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_petunjuk.xnb</Output>
+      <Time>2012-10-06T01:57:13.4839741+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\HowToPlay\1.png</Source>
+      <Name>image\HowToPlay\1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\HowToPlay\1.xnb</Output>
+      <Time>2012-10-06T02:06:30.8697408+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\HowToPlay\2.png</Source>
+      <Name>image\HowToPlay\2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\HowToPlay\2.xnb</Output>
+      <Time>2012-10-06T02:06:30.7942668+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\HowToPlay\3.png</Source>
+      <Name>image\HowToPlay\3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\HowToPlay\3.xnb</Output>
+      <Time>2012-10-06T02:06:30.8667402+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\HowToPlay\4.png</Source>
+      <Name>image\HowToPlay\4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\HowToPlay\4.xnb</Output>
+      <Time>2012-10-06T02:06:30.8687416+07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{11EF8256-F2A1-4FE5-99BB-AC2635EFB023}</ContentProjectGUID>

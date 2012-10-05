@@ -84,7 +84,7 @@ namespace GameNuclex.Screen
             // Menu Learn
             MenuTextures[1] = base.engine.content.Load<Texture2D>("image/MainMenu/btn_belajar");
             // Menu Setting
-            MenuTextures[2] = base.engine.content.Load<Texture2D>("image/MainMenu/btn_settings");
+            MenuTextures[2] = base.engine.content.Load<Texture2D>("image/MainMenu/btn_petunjuk");
             // Menu Gallery
             MenuTextures[3] = base.engine.content.Load<Texture2D>("image/MainMenu/btn_galeri");
             // Menu Info
@@ -132,12 +132,12 @@ namespace GameNuclex.Screen
 
         public override void Update(Microsoft.Xna.Framework.GameTime gameTime)
         {
-            //MouseState currentMouse = Mouse.GetState();
+            MouseState currentMouse = Mouse.GetState();
 
-            //cursor.Position.X = currentMouse.X;
-            //cursor.Position.Y = currentMouse.Y;
+            cursor.Position.X = currentMouse.X;
+            cursor.Position.Y = currentMouse.Y;
 
-            UpdatePlayer();
+            //UpdatePlayer();
 
             CheckCollision(gameTime);
         }
@@ -190,8 +190,8 @@ namespace GameNuclex.Screen
                                 engine.manager.Switch(selectDanceLearn);
                                 break;
                             case 2:
-                                Setting setting = new Setting(engine);
-                                engine.manager.Switch(setting);
+                                HowToPlay howToPlay = new HowToPlay(engine);
+                                engine.manager.Switch(howToPlay);
                                 break;
                             case 3:
                                 GalleryList gallery = new GalleryList(engine);

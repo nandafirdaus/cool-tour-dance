@@ -43,6 +43,22 @@ namespace GameNuclex.IO
             return data;
         }
 
+        public static DanceData LoadLearnDance(string name)
+        {
+            Trace.WriteLine(name);
+            string[] filePath = Directory.GetFiles(name, "*.csv");
+
+            Array.Sort(filePath, compareStrInt);
+
+            DanceData data = new DanceData(name);
+            for (int n = 0; n < filePath.Length; n++)
+            {
+                Trace.WriteLine(filePath[n]);
+                data.AddDataFrame(LoadFile(filePath[n]));
+            }
+            return data;
+        }
+
         public static DanceDataFrame LoadFile(string filepath)
         {
 

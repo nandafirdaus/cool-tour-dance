@@ -42,3 +42,16 @@ Content\FontGalleryList.xnb
 Content\Sound\Backsound.xnb
 Content\data\Dance\Play\Tari Lenggang Nyai\video.xnb
 Content\data\Dance\Play\Tari Lenggang Nyai\video.wmv
+Content\data\Dance\Learn\Tari Lenggang Nyai\01\video.xnb
+Content\data\Dance\Learn\Tari Lenggang Nyai\01\video.wmv
+Content\data\Dance\Learn\Tari Lenggang Nyai\02\video.xnb
+Content\data\Dance\Learn\Tari Lenggang Nyai\02\video.wmv
+Content\data\Dance\Learn\Tari Lenggang Nyai\03\video.xnb
+Content\data\Dance\Learn\Tari Lenggang Nyai\03\video.wmv
+Content\data\Dance\Learn\Tari Lenggang Nyai\04\video.xnb
+Content\data\Dance\Learn\Tari Lenggang Nyai\04\video.wmv
+Content\image\MainMenu\btn_petunjuk.xnb
+Content\image\HowToPlay\1.xnb
+Content\image\HowToPlay\2.xnb
+Content\image\HowToPlay\3.xnb
+Content\image\HowToPlay\4.xnb

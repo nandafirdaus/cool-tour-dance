@@ -37,6 +37,8 @@ namespace GameNuclex.Screen
         //GalleryItem[] items;
         Vector2[] itemPosition;
 
+        List<Tuple<string, Texture2D>> allList;
+
         int GameHeight, GameWidth;
 
         private bool isCollide;
@@ -54,13 +56,13 @@ namespace GameNuclex.Screen
             //KinectSensor.KinectSensors.StatusChanged += new EventHandler<StatusChangedEventArgs>(KinectSensors_StatusChanged);
             //DiscoverKinectDevice();
 
-            List<Tuple<string, Texture2D>> allList = GameIO.GetLearnDanceItem(DanceName, engine.graphics);
+            allList = GameIO.GetLearnDanceItem(DanceName, engine.graphics);
             //items = new GalleryItem[allList.Count];
             itemPosition = new Vector2[allList.Count + 1];
             //Trace.WriteLine("HOI " + allList.Length);
             for (int i = 0; i < allList.Count; i++)
             {
-
+                
                 itemPosition[i] = new Vector2(52 + (230 * i) + 52, 156 + (227 * (i / 4)) + 20);
 
                 //Trace.WriteLine(ss);
@@ -186,8 +188,8 @@ namespace GameNuclex.Screen
                     {
                         if (i != ItemPicture.Length - 1)
                         {
-                            //Gallery gallery = new Gallery(engine, items[i]);
-                            //engine.manager.Switch(gallery);
+                            //string wa = allList[i].Item1.Substring(8, allList[i].Item1.Length - 13);
+                            Learn learn = new Learn(engine, allList[i].Item1.Substring(8, allList[i].Item1.Length - 13));
                         }
                         else
                         {

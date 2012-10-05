@@ -278,3 +278,16 @@ D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\b
 D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\nunit.framework.xml
 D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\SlimDX.DirectInput.xml
 D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\obj\x86\Debug\Cool-Tour Dance.pdb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\01\video.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\02\video.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\03\video.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\04\video.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\01\video.wmv
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\02\video.wmv
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\03\video.wmv
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\04\video.wmv
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_petunjuk.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\HowToPlay\1.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\HowToPlay\2.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\HowToPlay\3.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\HowToPlay\4.xnb

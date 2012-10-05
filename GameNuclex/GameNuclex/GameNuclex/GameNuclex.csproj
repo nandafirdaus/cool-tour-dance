@@ -162,6 +162,8 @@
     <Compile Include="Screen\GalleryList.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Screen\HowToPlay.cs" />
+    <Compile Include="Screen\Learn.cs" />
     <Compile Include="Screen\LearnItem.cs" />
     <Compile Include="Screen\LearnScreen.cs">
       <SubType>Code</SubType>
