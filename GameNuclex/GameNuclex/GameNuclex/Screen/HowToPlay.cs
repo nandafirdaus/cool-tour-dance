@@ -57,9 +57,8 @@ namespace GameNuclex.Screen
 
             //allList = GameIO.GetPlayDanceInfo();
 
-            //Pictures = new Texture2D[allList.Length];
-
             totalPage = 4;
+            Pictures = new Texture2D[totalPage];
 
             for (int i = 0; i < totalPage; i++)
             {
@@ -86,10 +85,10 @@ namespace GameNuclex.Screen
             // Back button
             ControlPosition[0] = new Vector2(5, engine.graphics.Viewport.Height - 115);
             // Left button
-            ControlPosition[1] = new Vector2(5, engine.graphics.Viewport.Height / 2 - LeftButton.Height / 2);
+            ControlPosition[1] = new Vector2(5, 220 + engine.graphics.Viewport.Height / 2 - LeftButton.Height / 2);
             // Right button
             ControlPosition[2] = new Vector2(engine.graphics.Viewport.Width - 5 - LeftButton.Width,
-                engine.graphics.Viewport.Height / 2 - LeftButton.Height / 2);
+                220 + engine.graphics.Viewport.Height / 2 - LeftButton.Height / 2);
 
             base.OnEntered();
         }
