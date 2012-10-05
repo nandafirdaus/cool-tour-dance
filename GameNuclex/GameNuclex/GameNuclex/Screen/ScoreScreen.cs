@@ -43,8 +43,8 @@ namespace GameNuclex.Screen
 
         protected override void OnEntered()
         {
-            KinectSensor.KinectSensors.StatusChanged += new EventHandler<StatusChangedEventArgs>(KinectSensors_StatusChanged);
-            DiscoverKinectDevice();
+            //KinectSensor.KinectSensors.StatusChanged += new EventHandler<StatusChangedEventArgs>(KinectSensors_StatusChanged);
+            //DiscoverKinectDevice();
 
             CursorImage = engine.content.Load<Texture2D>("image/cursor");
             Background = engine.content.Load<Texture2D>("image/bg_map");
@@ -74,7 +74,22 @@ namespace GameNuclex.Screen
             //cursor.Position.X = currentMouse.X;
             //cursor.Position.Y = currentMouse.Y;
 
+            UpdatePlayer();
             CheckCollition(gameTime);
+        }
+
+        private void UpdatePlayer()
+        {
+            Skeleton playerSkeleton = engine.nuclexKinect.MainSkeleton;
+
+            // Update player position
+            if (playerSkeleton != null)
+            {
+                Joint hand = playerSkeleton.Joints[JointType.HandRight];
+                Joint chest = playerSkeleton.Joints[JointType.ShoulderCenter];
+                Point point = GetJointPoint(hand, chest);
+                cursor.Position = new Vector2(point.X, point.Y);
+            }
         }
 
         public override void Draw(Microsoft.Xna.Framework.GameTime gameTime)

@@ -79,12 +79,28 @@ namespace GameNuclex.Screen
 
         public override void Update(Microsoft.Xna.Framework.GameTime gameTime)
         {
-            MouseState currentMouse = Mouse.GetState();
+            //MouseState currentMouse = Mouse.GetState();
 
-            cursor.Position.X = currentMouse.X;
-            cursor.Position.Y = currentMouse.Y;
+            //cursor.Position.X = currentMouse.X;
+            //cursor.Position.Y = currentMouse.Y;
+
+            UpdatePlayer();
 
             CheckCollition(gameTime);
+        }
+
+        private void UpdatePlayer()
+        {
+            Skeleton playerSkeleton = engine.nuclexKinect.MainSkeleton;
+
+            // Update player position
+            if (playerSkeleton != null)
+            {
+                Joint hand = playerSkeleton.Joints[JointType.HandRight];
+                Joint chest = playerSkeleton.Joints[JointType.ShoulderCenter];
+                Point point = GetJointPoint(hand, chest);
+                cursor.Position = new Vector2(point.X, point.Y);
+            }
         }
 
         public override void Draw(Microsoft.Xna.Framework.GameTime gameTime)

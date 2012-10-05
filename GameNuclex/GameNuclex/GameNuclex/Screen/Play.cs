@@ -61,8 +61,8 @@ namespace GameNuclex.Screen
 
         protected override void OnEntered()
         {
-            KinectSensor.KinectSensors.StatusChanged += new EventHandler<StatusChangedEventArgs>(KinectSensors_StatusChanged);
-            DiscoverKinectDevice();
+            //KinectSensor.KinectSensors.StatusChanged += new EventHandler<StatusChangedEventArgs>(KinectSensors_StatusChanged);
+            //DiscoverKinectDevice();
 
             LoadingBackground = engine.content.Load<Texture2D>("image/PlayScreen/loadings");
 
@@ -189,7 +189,8 @@ namespace GameNuclex.Screen
             gameTimer.isTicked(gameTime);
             categoryTimer.isTicked(gameTime);
 
-            DetectKeyboard();
+            //DetectKeyboard();
+            UpdatePlayer();
 
             if (!hasPlayed && player.State == MediaState.Playing)
             {
@@ -201,6 +202,18 @@ namespace GameNuclex.Screen
                 ScoreScreen scoreScreen = new ScoreScreen(engine, scoringSystem.TotalScore, scoringSystem.TotalPerfect,
                     scoringSystem.TotalGood, scoringSystem.TotalBad, scoringSystem.TotalMiss);
                 engine.manager.Switch(scoreScreen);
+            }
+        }
+
+        public void UpdatePlayer()
+        {
+            Skeleton playerSkeleton = engine.nuclexKinect.MainSkeleton;
+
+            // Update player position
+            if (playerSkeleton != null)
+            {
+                //Trace.WriteLine(Geometry.Get2DPolar(playerSkeleton.Joints[JointType.HipCenter], playerSkeleton.Joints[JointType.ElbowRight]));
+                scoringSystem.UpdateTime(playerSkeleton, gameTimer.totalTime);
             }
         }
 

@@ -8,6 +8,7 @@ using Microsoft.Kinect;
 using Microsoft.Xna.Framework;
 using System.Diagnostics;
 using System.Xml;
+using Microsoft.Xna.Framework.Graphics;
 namespace GameNuclex.IO
 {
     public class GameIO
@@ -106,6 +107,20 @@ namespace GameNuclex.IO
                 temp[nn] = new StreamReader(dirName[nn]).ReadToEnd();
             }
             return temp;
+        }
+
+        public static List<Tuple<string, Texture2D>> GetLearnDanceItem(string danceName, GraphicsDevice graphics)
+        {
+            string[] dirName = Directory.GetFiles(LEARN_PATH + danceName, "thumbnail.jpg", SearchOption.AllDirectories);
+            List<Tuple<string, Texture2D>> danceInfo = new List<Tuple<string, Texture2D>>(dirName.Length);
+            //Texture2D[] temp = new Texture2D[dirName.Length];
+
+            for (int nn = 0; nn < dirName.Length; nn++)
+            {
+                danceInfo.Add(new Tuple<string,Texture2D>(dirName[nn], Texture2D.FromStream(graphics, 
+                    File.OpenRead(dirName[nn]))));
+            }
+            return danceInfo;
         }
     }
 }

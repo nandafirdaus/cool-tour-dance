@@ -29,16 +29,16 @@ Content\image\PlayScreen\lewat.xnb
 Content\image\PlayScreen\loadings.xnb
 Content\image\PlayScreen\keren.xnb
 Content\image\PlayScreen\score-background.xnb
+Content\image\Gallery\background.xnb
+Content\image\Gallery\list-bg.xnb
+Content\image\Gallery\gallery-bg.xnb
+Content\image\progress-barx.xnb
+Content\image\progress-baryyy.xnb
 Content\SpriteFont1.xnb
 Content\GameFont.xnb
 Content\Font2.xnb
 Content\Combo.xnb
-Content\Sound\Backsound.xnb
-Content\image\Gallery\background.xnb
-Content\image\Gallery\list-bg.xnb
-Content\image\Gallery\gallery-bg.xnb
 Content\FontGalleryList.xnb
-Content\image\progress-barx.xnb
+Content\Sound\Backsound.xnb
 Content\data\Dance\Play\Tari Lenggang Nyai\video.xnb
-Content\image\progress-baryyy.xnb
 Content\data\Dance\Play\Tari Lenggang Nyai\video.wmv

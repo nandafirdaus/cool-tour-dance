@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using GameNuclex.NuclexPlus.GameFlow;
 using Microsoft.Xna.Framework.Graphics;
-using GameNuclex.NuclexPlus.Core;
-using Microsoft.Xna.Framework;
-using GameNuclex.Object.NonGame;
-using Microsoft.Xna.Framework.Input;
 using Microsoft.Kinect;
+using GameNuclex.Object.NonGame;
+using GameNuclex.Object.Game;
+using Microsoft.Xna.Framework;
+using GameNuclex.NuclexPlus.Core;
 using GameNuclex.IO;
 using System.Xml.Linq;
-using GameNuclex.Object.Game;
+using GameNuclex.NuclexPlus.GameFlow;
+using Microsoft.Xna.Framework.Input;
 using System.IO;
 
 namespace GameNuclex.Screen
@@ -49,8 +49,8 @@ namespace GameNuclex.Screen
 
         protected override void OnEntered()
         {
-            KinectSensor.KinectSensors.StatusChanged += new EventHandler<StatusChangedEventArgs>(KinectSensors_StatusChanged);
-            DiscoverKinectDevice();
+            //KinectSensor.KinectSensors.StatusChanged += new EventHandler<StatusChangedEventArgs>(KinectSensors_StatusChanged);
+            //DiscoverKinectDevice();
 
             string[] allList = GameIO.GetDanceInfo();
             items = new GalleryItem[allList.Length];
@@ -78,13 +78,13 @@ namespace GameNuclex.Screen
 
             ItemPicture = new Texture2D[allList.Length + 1];
 
-            for (int i = 0; i < ItemPicture.Length-1; i++)
+            for (int i = 0; i < ItemPicture.Length - 1; i++)
             {
-                ItemPicture[i] = Texture2D.FromStream(engine.graphics, 
+                ItemPicture[i] = Texture2D.FromStream(engine.graphics,
                     File.OpenRead(GameIO.GALLERY_PATH + items[i].Name + "\\thumbnail.jpg"));
             }
 
-            ItemPicture[ItemPicture.Length-1] = engine.content.Load<Texture2D>("image/btn_back");
+            ItemPicture[ItemPicture.Length - 1] = engine.content.Load<Texture2D>("image/btn_back");
 
             CursorImage = engine.content.Load<Texture2D>("image/cursor");
             Background = engine.content.Load<Texture2D>("image/Gallery/background");
@@ -113,7 +113,23 @@ namespace GameNuclex.Screen
             //cursor.Position.X = currentMouse.X;
             //cursor.Position.Y = currentMouse.Y;
 
+            UpdatePlayer();
+
             CheckCollition(gameTime);
+        }
+
+        private void UpdatePlayer()
+        {
+            Skeleton playerSkeleton = engine.nuclexKinect.MainSkeleton;
+
+            // Update player position
+            if (playerSkeleton != null)
+            {
+                Joint hand = playerSkeleton.Joints[JointType.HandRight];
+                Joint chest = playerSkeleton.Joints[JointType.ShoulderCenter];
+                Point point = GetJointPoint(hand, chest);
+                cursor.Position = new Vector2(point.X, point.Y);
+            }
         }
 
         public override void Draw(Microsoft.Xna.Framework.GameTime gameTime)
@@ -126,18 +142,18 @@ namespace GameNuclex.Screen
                 , Color.White);
 
             engine.spriteBatch.Draw(ListBackground, new Rectangle(
-                GameWidth / 2 - ListBackground.Width / 2, GameHeight / 2 - ListBackground.Height / 2, 
+                GameWidth / 2 - ListBackground.Width / 2, GameHeight / 2 - ListBackground.Height / 2,
                 ListBackground.Width, ListBackground.Height), Color.White);
 
             for (int i = 0; i < ItemPicture.Length - 1; i++)
             {
                 engine.spriteBatch.Draw(ItemPicture[i], new Rectangle(
-                    (int) itemPosition[i].X, (int) itemPosition[i].Y, 
+                    (int)itemPosition[i].X, (int)itemPosition[i].Y,
                     ItemPicture[i].Width, ItemPicture[i].Height), Color.White);
 
                 Vector2 stringLength = titleFont.MeasureString(items[i].Name);
                 engine.spriteBatch.DrawString(titleFont, items[i].Name,
-                    new Vector2(52 + (230 * i) + (115 - stringLength.X / 2), 156 + (227 * (i / 4)) + 20 + ItemPicture[i].Height + 5), 
+                    new Vector2(52 + (230 * i) + (115 - stringLength.X / 2), 156 + (227 * (i / 4)) + 20 + ItemPicture[i].Height + 5),
                     Color.White);
             }
 
@@ -194,29 +210,6 @@ namespace GameNuclex.Screen
                     isCollide = false;
                 }
             }
-
-            //if (rectangle1.Intersects(rectangle2))
-            //{
-            //    isCollide = true;
-            //    progressBar.Update(new Vector2(10, Background.Height - 115),
-            //        gameTime, (int)cursor.Position.X - 48,
-            //        (int)cursor.Position.Y + 50);
-
-            //    if (progressBar.isFull)
-            //    {
-            //        //MainMenu mainMenu = new MainMenu(engine);
-            //        //engine.manager.Switch(mainMenu);
-
-            //        Gallery gallery = new Gallery(engine);
-            //        engine.manager.Switch(gallery);
-            //    }
-
-            //    return;
-            //}
-            //else
-            //{
-            //    isCollide = false;
-            //}
 
             progressBar.Update(new Vector2(), gameTime, (int)cursor.Position.X - 48,
                         (int)cursor.Position.Y + 50);

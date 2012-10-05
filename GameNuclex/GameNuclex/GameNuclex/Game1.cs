@@ -14,6 +14,7 @@ using Nuclex.Game.States;
 using GameNuclex.Screen;
 using GameNuclex.Object;
 using GameNuclex.NuclexPlus.Core;
+using GameNuclex.NuclexPlus.Component;
 
 namespace GameNuclex
 {
@@ -28,6 +29,8 @@ namespace GameNuclex
         SoundEffect soundEffect;
         SoundEffectInstance soundEffectInstance;
 
+        NuclexKinect nucKinect;
+
         Engine engine;
         public Game1()
         {
@@ -35,7 +38,7 @@ namespace GameNuclex
             Content.RootDirectory = "Content";
             graphics.PreferredBackBufferHeight = 768;
             graphics.PreferredBackBufferWidth = 1024;
-            graphics.IsFullScreen = true;
+            //graphics.IsFullScreen = true;
         }
 
         /// <summary>
@@ -70,6 +73,8 @@ namespace GameNuclex
             soundEffect = Content.Load<SoundEffect>("Sound/Backsound");
             soundEffectInstance = soundEffect.CreateInstance();
 
+            nucKinect = new NuclexKinect(this.GraphicsDevice);
+
             soundEffectInstance.IsLooped = true;
 
             // Init Manager //
@@ -78,6 +83,7 @@ namespace GameNuclex
             this.Services.AddService(typeof(GameStateManager), manager);
             this.Services.AddService(typeof(GraphicsDevice), this.GraphicsDevice);
             this.Services.AddService(typeof(SoundEffectInstance), this.soundEffectInstance);
+            this.Services.AddService(typeof(NuclexKinect), this.nucKinect);
             engine = new Engine(this);
             SplashScreen splash = new SplashScreen(engine);
 
