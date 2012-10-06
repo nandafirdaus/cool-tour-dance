@@ -67,7 +67,7 @@ namespace GameNuclex.Screen
             LoadingBackground = engine.content.Load<Texture2D>("image/PlayScreen/loadings");
 
             // Init scoring system //
-            DanceData dance = IO.GameIO.LoadLearnDance(DanceURI);
+            DanceData dance = IO.GameIO.LoadLearnDance("Content/" + DanceURI);
             scoringSystem = new ScoringSystem(dance, ScoringSystem.ScoringDegree.Mean);
             gameTimer = new NuclexTimer(200);
 

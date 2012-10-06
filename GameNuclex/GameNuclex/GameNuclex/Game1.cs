@@ -85,9 +85,12 @@ namespace GameNuclex
             this.Services.AddService(typeof(SoundEffectInstance), this.soundEffectInstance);
             this.Services.AddService(typeof(NuclexKinect), this.nucKinect);
             engine = new Engine(this);
-            SplashScreen splash = new SplashScreen(engine);
 
+            SplashScreen splash = new SplashScreen(engine);
             manager.Switch(splash);
+
+            //PauseMenu pause = new PauseMenu(engine);
+            //manager.Switch(pause);
             
         }
 

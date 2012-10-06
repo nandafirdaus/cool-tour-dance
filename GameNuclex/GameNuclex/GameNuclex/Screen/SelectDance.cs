@@ -53,6 +53,11 @@ namespace GameNuclex.Screen
             //KinectSensor.KinectSensors.StatusChanged += new EventHandler<StatusChangedEventArgs>(KinectSensors_StatusChanged);
             //DiscoverKinectDevice();
 
+            if (engine.soundEffect.State != Microsoft.Xna.Framework.Audio.SoundState.Playing)
+            {
+                engine.soundEffect.Play();
+            }
+
             allList = GameIO.GetPlayDanceInfo();
 
             Pictures = new Texture2D[allList.Length];

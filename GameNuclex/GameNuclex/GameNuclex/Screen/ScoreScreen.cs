@@ -158,8 +158,10 @@ namespace GameNuclex.Screen
 
                 if (progressBar.isFull)
                 {
-                    MainMenu mainMenu = new MainMenu(engine);
-                    engine.manager.Switch(mainMenu);
+                    //MainMenu mainMenu = new MainMenu(engine);
+                    //engine.manager.Switch(mainMenu);
+                    SelectDance select = new SelectDance(engine);
+                    engine.manager.Switch(select);
                 }
 
                 return;

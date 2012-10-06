@@ -474,6 +474,33 @@
       <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\HowToPlay\4.xnb</Output>
       <Time>2012-10-06T02:06:30.8687416+07:00</Time>
     </Item>
+    <Item>
+      <Source>image\Pause\kembali.png</Source>
+      <Name>image\Pause\kembali</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\Pause\kembali.xnb</Output>
+      <Time>2012-10-06T17:36:17.8848551+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\Pause\lanjut.png</Source>
+      <Name>image\Pause\lanjut</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\Pause\lanjut.xnb</Output>
+      <Time>2012-10-06T17:36:17.8858544+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\Pause\pause.png</Source>
+      <Name>image\Pause\pause</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\Pause\pause.xnb</Output>
+      <Time>2012-10-06T17:36:17.883855+07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{11EF8256-F2A1-4FE5-99BB-AC2635EFB023}</ContentProjectGUID>

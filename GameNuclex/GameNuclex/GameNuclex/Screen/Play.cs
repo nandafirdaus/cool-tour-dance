@@ -189,7 +189,7 @@ namespace GameNuclex.Screen
             gameTimer.isTicked(gameTime);
             categoryTimer.isTicked(gameTime);
 
-            //DetectKeyboard();
+            DetectKeyboard();
             UpdatePlayer();
 
             if (!hasPlayed && player.State == MediaState.Playing)
@@ -210,11 +210,11 @@ namespace GameNuclex.Screen
             Skeleton playerSkeleton = engine.nuclexKinect.MainSkeleton;
 
             // Update player position
-            if (playerSkeleton != null)
-            {
+            //if (playerSkeleton != null)
+            //{
                 //Trace.WriteLine(Geometry.Get2DPolar(playerSkeleton.Joints[JointType.HipCenter], playerSkeleton.Joints[JointType.ElbowRight]));
                 scoringSystem.UpdateTime(playerSkeleton, gameTimer.totalTime);
-            }
+            //}
         }
 
         public void DetectKeyboard()
@@ -222,10 +222,16 @@ namespace GameNuclex.Screen
             KeyboardState newState = Keyboard.GetState();
 
             // Is the SPACE key down?
-            if (newState.IsKeyDown(Keys.Space))
+            if (newState.IsKeyDown(Keys.Escape))
             {
-                gameTimer.reset();
-                scoringSystem.Reset();
+                //gameTimer.reset();
+                //scoringSystem.Reset();
+
+                player.Pause();
+                
+
+                PauseMenu pause = new PauseMenu(engine, this.player);
+                engine.manager.Push(pause, GameStateModality.Popup);
             }
         }
 

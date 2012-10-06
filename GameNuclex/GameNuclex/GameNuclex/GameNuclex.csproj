@@ -156,6 +156,7 @@
     <Compile Include="Screen\About.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Screen\FeedBackScreen.cs" />
     <Compile Include="Screen\Gallery.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -171,6 +172,7 @@
     <Compile Include="Screen\MainMenu.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Screen\PauseMenu.cs" />
     <Compile Include="Screen\Play.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -192,6 +194,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />
+    <Content Include="Gamex.ico" />
     <Content Include="GameThumbnail.png">
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
     </Content>
