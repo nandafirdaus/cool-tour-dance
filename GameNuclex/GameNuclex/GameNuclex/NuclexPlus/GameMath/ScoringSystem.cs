@@ -192,78 +192,7 @@ namespace GameNuclex.NuclexPlus.GameMath
 
 
         }
-        // ga kepake susah //
-        public int CompareSkeleton(Vector3[] skeletonOri, Skeleton skeletonData, ScoringDegree scoringType)
-        {
-            Tuple<float, float, float>[] countedSkeleton = new Tuple<float, float, float>[8];
-            // ElbowRight //
-            countedSkeleton[0] = Geometry.GetRadiusPolarAzimuth(skeletonOri[NuclexJoint.WristRight], skeletonOri[NuclexJoint.ElbowRight]);
-            countedSkeleton[1] = Geometry.GetRadiusPolarAzimuth(skeletonData.Joints[JointType.WristRight], skeletonData.Joints[JointType.ElbowRight]);
-            // ElbowLeft//
-            countedSkeleton[2] = Geometry.GetRadiusPolarAzimuth(skeletonOri[NuclexJoint.WristLeft], skeletonOri[NuclexJoint.ElbowLeft]); ;
-            countedSkeleton[3] = Geometry.GetRadiusPolarAzimuth(skeletonData.Joints[JointType.WristLeft], skeletonData.Joints[JointType.ElbowLeft]);
-            // KneeRight //
-            countedSkeleton[4] = Geometry.GetRadiusPolarAzimuth(skeletonOri[NuclexJoint.KneeRight], skeletonOri[NuclexJoint.AnkleRight]);
-            countedSkeleton[5] = Geometry.GetRadiusPolarAzimuth(skeletonData.Joints[JointType.KneeRight], skeletonData.Joints[JointType.AnkleRight]);
-            // KneeLeft //
-            countedSkeleton[6] = Geometry.GetRadiusPolarAzimuth(skeletonOri[NuclexJoint.KneeLeft], skeletonOri[NuclexJoint.AnkleLeft]);
-            countedSkeleton[7] = Geometry.GetRadiusPolarAzimuth(skeletonData.Joints[JointType.KneeLeft], skeletonData.Joints[JointType.AnkleLeft]);
-
-            int success = 0;
-
-            if (scoringType == ScoringDegree.Max)
-            {
-                for (int n = 0; n < countedSkeleton.Length; n += 2)
-                {
-                    if (Geometry.MaxDegreeError(countedSkeleton[n], countedSkeleton[n + 1]) < permittedError)
-                    {
-                        //Trace.WriteLine(Geometry.MaxDegreeError(countedSkeleton[n], countedSkeleton[n + 1]));
-                        success++;
-                    }
-                }
-
-            }
-            else if (scoringType == ScoringDegree.Min)
-            {
-                for (int n = 0; n < countedSkeleton.Length; n += 2)
-                {
-                    if (Geometry.MinDegreeError(countedSkeleton[n], countedSkeleton[n + 1]) < permittedError)
-                    {
-                        success++;
-                    }
-                }
-
-            }
-            else if (scoringType == ScoringDegree.Mean)
-            {
-                for (int n = 0; n < countedSkeleton.Length; n += 2)
-                {
-                    if (Geometry.MeanDegreeError(countedSkeleton[n], countedSkeleton[n + 1]) < permittedError)
-                    {
-                        success++;
-                    }
-                }
-            }
-
-
-            if (success == limitPerfect)
-            {
-                return catPerfect;
-            }
-            else if (success == limitGood)
-            {
-                return catGood;
-            }
-            else if (success == limitBad)
-            {
-                return catBad;
-            }
-            else
-            {
-                return catMiss;
-            }
-        }
-
+        
         public int GetScore(int result)
         {
 
@@ -298,75 +227,93 @@ namespace GameNuclex.NuclexPlus.GameMath
         bool hasChecked = false;
         int MaxCorrect = 0;
         int MaxCorrectCategory;
+
         public void UpdateTime(Skeleton skeletonData, long time)
         {
 
-            if (index + 1 <= danceData.listOfFrame.Count - 1)
+            if (skeletonData == null)
             {
+                _MomentMiss = true;
+                _TotalMiss++;
 
-                DanceDataFrame now = danceData.listOfFrame[index];
-                DanceDataFrame next = danceData.listOfFrame[index + 1];
+                // Reset local variable /
+                MaxCorrectCategory = 0;
+                MaxCorrect = 0;
 
-                if (!hasChecked)
-                {
-                    //Trace.WriteLine("Time : " + time + " " + now.time + " " + next.time);
-                    // do scoring //
-                    int result = CompareSkeleton2D(now.jointPosition, skeletonData, usedScoringDegree);
-                    MaxCorrect = Math.Max(MaxCorrect, GetScore(result));
-                    MaxCorrectCategory = Math.Max(MaxCorrectCategory, result);
-                    hasChecked = true;
-                }
-
-                if (next.time <= time)
-                {
-
-                    // Current index in dance data //
-                    index++;
-                    // Reset status if movement has been checked //s
-                    hasChecked = false;
-                    // Add total score //
-                    TotalScore += (MaxCorrect);
-                    // Add per category score//
-                    // Reset moment //
-                    _MomentMiss = _MomentBad = _MomentGood = _MomentPerfect = false;
-                    switch (MaxCorrectCategory)
-                    {
-                        case (catPerfect):
-                            {
-                                _MomentPerfect = true;
-                                _TotalPerfect++;
-                                break;
-                            }
-                        case (catGood):
-                            {
-                                _MomentGood = true;
-                                _TotalGood++;
-                                break;
-                            }
-                        case (catBad):
-                            {
-                                _MomentBad = true;
-                                _TotalBad++;
-                                break;
-                            }
-                        case (catMiss):
-                            {
-                                _MomentMiss = true;
-                                _TotalMiss++;
-                                break;
-                            }
-                    }
+                hasChecked = true;
 
 
-
-                    // Reset local variable /
-                    MaxCorrectCategory = 0;
-                    MaxCorrect = 0;
-                }
             }
             else
             {
-                //Trace.WriteLine("SELESAI");
+
+                if (index + 1 <= danceData.listOfFrame.Count - 1)
+                {
+
+                    DanceDataFrame now = danceData.listOfFrame[index];
+                    DanceDataFrame next = danceData.listOfFrame[index + 1];
+
+                    if (!hasChecked)
+                    {
+                        //Trace.WriteLine("Time : " + time + " " + now.time + " " + next.time);
+                        // do scoring //
+                        int result = CompareSkeleton2D(now.jointPosition, skeletonData, usedScoringDegree);
+                        MaxCorrect = Math.Max(MaxCorrect, GetScore(result));
+                        MaxCorrectCategory = Math.Max(MaxCorrectCategory, result);
+                        hasChecked = true;
+                    }
+
+                    if (next.time <= time)
+                    {
+
+                        // Current index in dance data //
+                        index++;
+                        // Reset status if movement has been checked //s
+                        hasChecked = false;
+                        // Add total score //
+                        TotalScore += (MaxCorrect);
+                        // Add per category score//
+                        // Reset moment //
+                        _MomentMiss = _MomentBad = _MomentGood = _MomentPerfect = false;
+                        switch (MaxCorrectCategory)
+                        {
+                            case (catPerfect):
+                                {
+                                    _MomentPerfect = true;
+                                    _TotalPerfect++;
+                                    break;
+                                }
+                            case (catGood):
+                                {
+                                    _MomentGood = true;
+                                    _TotalGood++;
+                                    break;
+                                }
+                            case (catBad):
+                                {
+                                    _MomentBad = true;
+                                    _TotalBad++;
+                                    break;
+                                }
+                            case (catMiss):
+                                {
+                                    _MomentMiss = true;
+                                    _TotalMiss++;
+                                    break;
+                                }
+                        }
+
+
+
+                        // Reset local variable /
+                        MaxCorrectCategory = 0;
+                        MaxCorrect = 0;
+                    }
+                }
+                else
+                {
+                    //Trace.WriteLine("SELESAI");
+                }
             }
         }
     }

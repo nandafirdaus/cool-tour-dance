@@ -55,3 +55,6 @@ Content\image\HowToPlay\1.xnb
 Content\image\HowToPlay\2.xnb
 Content\image\HowToPlay\3.xnb
 Content\image\HowToPlay\4.xnb
+Content\image\Pause\kembali.xnb
+Content\image\Pause\lanjut.xnb
+Content\image\Pause\pause.xnb

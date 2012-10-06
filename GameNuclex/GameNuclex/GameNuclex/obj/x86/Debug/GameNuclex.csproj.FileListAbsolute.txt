@@ -291,3 +291,6 @@ D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\b
 D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\HowToPlay\2.xnb
 D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\HowToPlay\3.xnb
 D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\HowToPlay\4.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\Pause\kembali.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\Pause\lanjut.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\Pause\pause.xnb
