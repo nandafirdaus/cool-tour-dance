@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>image\shinigami-badge.jpg</Source>
+      <Name>image\shinigami-badge</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\shinigami-badge.xnb</Output>
+      <Time>2012-09-11T16:12:42.8296465+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\scorpion.png</Source>
+      <Name>image\scorpion</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\scorpion.xnb</Output>
+      <Time>2012-09-11T16:12:42.8286424+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\menu-start.png</Source>
+      <Name>image\menu-start</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\menu-start.xnb</Output>
+      <Time>2012-09-11T16:12:42.827073+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\menu-small.png</Source>
+      <Name>image\menu-small</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\menu-small.xnb</Output>
+      <Time>2012-09-11T16:12:42.827073+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\cursor.png</Source>
+      <Name>image\cursor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\cursor.xnb</Output>
+      <Time>2012-09-11T16:12:42.8260721+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\splash-screen.png</Source>
+      <Name>image\splash-screen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\splash-screen.xnb</Output>
+      <Time>2012-09-11T16:12:42.8316463+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\MainMenu\bg_menu.png</Source>
+      <Name>image\MainMenu\bg_menu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\bg_menu.xnb</Output>
+      <Time>2012-09-11T16:12:42.8197449+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\progress-bar.png</Source>
+      <Name>image\progress-bar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\progress-bar.xnb</Output>
+      <Time>2012-09-16T11:15:21.247229+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\MainMenu\btn_belajar.png</Source>
+      <Name>image\MainMenu\btn_belajar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_belajar.xnb</Output>
+      <Time>2012-09-16T11:59:05.5412836+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\MainMenu\btn_galeri.png</Source>
+      <Name>image\MainMenu\btn_galeri</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_galeri.xnb</Output>
+      <Time>2012-09-16T11:59:05.5442846+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\MainMenu\btn_info.png</Source>
+      <Name>image\MainMenu\btn_info</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_info.xnb</Output>
+      <Time>2012-09-16T11:59:05.5492855+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\MainMenu\btn_mulai.png</Source>
+      <Name>image\MainMenu\btn_mulai</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_mulai.xnb</Output>
+      <Time>2012-09-16T11:59:05.537284+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\MainMenu\btn_settings.png</Source>
+      <Name>image\MainMenu\btn_settings</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_settings.xnb</Output>
+      <Time>2012-09-16T11:59:05.5322835+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\bg_map.png</Source>
+      <Name>image\bg_map</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\bg_map.xnb</Output>
+      <Time>2012-09-16T13:25:57.5721007+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\under-const.png</Source>
+      <Name>image\under-const</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\under-const.xnb</Output>
+      <Time>2012-09-16T13:52:16.5644119+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\PlayScreen\menu-background.png</Source>
+      <Name>image\PlayScreen\menu-background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\menu-background.xnb</Output>
+      <Time>2012-09-16T14:06:00.5190281+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\PlayScreen\score-backgroundxxx.png</Source>
+      <Name>image\PlayScreen\score-backgroundxxx</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\score-backgroundxxx.xnb</Output>
+      <Time>2012-09-16T14:06:00.5140276+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\btn_back.png</Source>
+      <Name>image\btn_back</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\btn_back.xnb</Output>
+      <Time>2012-09-17T08:54:51.1717209+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\SelectDance\btn_left.png</Source>
+      <Name>image\SelectDance\btn_left</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\SelectDance\btn_left.xnb</Output>
+      <Time>2012-09-17T09:22:35.3933267+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\SelectDance\btn_right.png</Source>
+      <Name>image\SelectDance\btn_right</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\SelectDance\btn_right.xnb</Output>
+      <Time>2012-09-17T09:22:35.4003278+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\SelectDance\pilih_screen.png</Source>
+      <Name>image\SelectDance\pilih_screen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\SelectDance\pilih_screen.xnb</Output>
+      <Time>2012-09-17T09:22:35.3893256+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\SelectDance\page-title.png</Source>
+      <Name>image\SelectDance\page-title</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\SelectDance\page-title.xnb</Output>
+      <Time>2012-09-17T09:36:09.1092017+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\SelectDance\tari-lenggang-nyai.jpg</Source>
+      <Name>image\SelectDance\tari-lenggang-nyai</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\SelectDance\tari-lenggang-nyai.xnb</Output>
+      <Time>2012-09-17T10:14:48.4952416+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\About\info-background.png</Source>
+      <Name>image\About\info-background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\About\info-background.xnb</Output>
+      <Time>2012-09-17T13:29:48.540705+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\MainMenu\btn_close.png</Source>
+      <Name>image\MainMenu\btn_close</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_close.xnb</Output>
+      <Time>2012-09-17T15:47:32.7013124+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\PlayScreen\bagus.png</Source>
+      <Name>image\PlayScreen\bagus</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\bagus.xnb</Output>
+      <Time>2012-09-17T17:34:18.9750124+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\PlayScreen\buruk.png</Source>
+      <Name>image\PlayScreen\buruk</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\buruk.xnb</Output>
+      <Time>2012-09-17T17:34:19.0004738+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\PlayScreen\lewat.png</Source>
+      <Name>image\PlayScreen\lewat</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\lewat.xnb</Output>
+      <Time>2012-09-17T17:34:19.0184767+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\PlayScreen\loadings.png</Source>
+      <Name>image\PlayScreen\loadings</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\loadings.xnb</Output>
+      <Time>2012-09-17T17:57:00.4286639+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\PlayScreen\keren.png</Source>
+      <Name>image\PlayScreen\keren</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\keren.xnb</Output>
+      <Time>2012-09-17T20:39:23.2896327+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\PlayScreen\score-background.png</Source>
+      <Name>image\PlayScreen\score-background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\score-background.xnb</Output>
+      <Time>2012-09-17T20:39:48.5165198+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\Gallery\background.png</Source>
+      <Name>image\Gallery\background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\Gallery\background.xnb</Output>
+      <Time>2012-09-30T10:47:13.8109805+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\Gallery\list-bg.png</Source>
+      <Name>image\Gallery\list-bg</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\Gallery\list-bg.xnb</Output>
+      <Time>2012-09-30T10:50:04.463822+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\Gallery\gallery-bg.png</Source>
+      <Name>image\Gallery\gallery-bg</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\Gallery\gallery-bg.xnb</Output>
+      <Time>2012-09-30T11:43:29.2880054+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\progress-barx.png</Source>
+      <Name>image\progress-barx</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\progress-barx.xnb</Output>
+      <Time>2012-10-02T09:32:18.2781925+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\progress-baryyy.png</Source>
+      <Name>image\progress-baryyy</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\progress-baryyy.xnb</Output>
+      <Time>2012-10-03T15:28:11.4531382+07:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteFont1.spritefont</Source>
+      <Name>SpriteFont1</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
+      <Time>2012-09-17T20:53:19.1024283+07:00</Time>
+    </Item>
+    <Item>
+      <Source>GameFont.spritefont</Source>
+      <Name>GameFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\GameFont.xnb</Output>
+      <Time>2012-09-17T10:33:45.5992735+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Font2.spritefont</Source>
+      <Name>Font2</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\Font2.xnb</Output>
+      <Time>2012-09-17T14:07:51.5982293+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Combo.spritefont</Source>
+      <Name>Combo</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\Combo.xnb</Output>
+      <Time>2012-09-17T17:00:20.8204955+07:00</Time>
+    </Item>
+    <Item>
+      <Source>FontGalleryList.spritefont</Source>
+      <Name>FontGalleryList</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\FontGalleryList.xnb</Output>
+      <Time>2012-09-30T15:17:35.5840004+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sound\Backsound.wav</Source>
+      <Name>Sound\Backsound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\Sound\Backsound.xnb</Output>
+      <Time>2012-09-29T15:15:31.9371031+07:00</Time>
+    </Item>
+    <Item>
+      <Source>data\Dance\Play\Tari Lenggang Nyai\video.wmv</Source>
+      <Name>data\Dance\Play\Tari Lenggang Nyai\video</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Play\Tari Lenggang Nyai\video.xnb</Output>
+      <Extra>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Play\Tari Lenggang Nyai\video.wmv</Extra>
+      <Time>2012-09-29T11:39:26+07:00</Time>
+    </Item>
+    <Item>
+      <Source>data\Dance\Learn\Tari Lenggang Nyai\01\video.wmv</Source>
+      <Name>data\Dance\Learn\Tari Lenggang Nyai\01\video</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\01\video.xnb</Output>
+      <Extra>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\01\video.wmv</Extra>
+      <Time>2012-09-15T11:54:56.2299379+07:00</Time>
+    </Item>
+    <Item>
+      <Source>data\Dance\Learn\Tari Lenggang Nyai\02\video.wmv</Source>
+      <Name>data\Dance\Learn\Tari Lenggang Nyai\02\video</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\02\video.xnb</Output>
+      <Extra>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\02\video.wmv</Extra>
+      <Time>2012-09-15T11:54:56.2299379+07:00</Time>
+    </Item>
+    <Item>
+      <Source>data\Dance\Learn\Tari Lenggang Nyai\03\video.wmv</Source>
+      <Name>data\Dance\Learn\Tari Lenggang Nyai\03\video</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\03\video.xnb</Output>
+      <Extra>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\03\video.wmv</Extra>
+      <Time>2012-09-15T11:54:56.2299379+07:00</Time>
+    </Item>
+    <Item>
+      <Source>data\Dance\Learn\Tari Lenggang Nyai\04\video.wmv</Source>
+      <Name>data\Dance\Learn\Tari Lenggang Nyai\04\video</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\04\video.xnb</Output>
+      <Extra>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\04\video.wmv</Extra>
+      <Time>2012-09-15T11:54:56.2299379+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\MainMenu\btn_petunjuk.png</Source>
+      <Name>image\MainMenu\btn_petunjuk</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_petunjuk.xnb</Output>
+      <Time>2012-10-06T01:57:13.4839741+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\HowToPlay\1.png</Source>
+      <Name>image\HowToPlay\1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\HowToPlay\1.xnb</Output>
+      <Time>2012-10-06T02:06:30.8697408+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\HowToPlay\2.png</Source>
+      <Name>image\HowToPlay\2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\HowToPlay\2.xnb</Output>
+      <Time>2012-10-06T02:06:30.7942668+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\HowToPlay\3.png</Source>
+      <Name>image\HowToPlay\3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\HowToPlay\3.xnb</Output>
+      <Time>2012-10-06T02:06:30.8667402+07:00</Time>
+    </Item>
+    <Item>
+      <Source>image\HowToPlay\4.png</Source>
+      <Name>image\HowToPlay\4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\HowToPlay\4.xnb</Output>
+      <Time>2012-10-06T02:06:30.8687416+07:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{11EF8256-F2A1-4FE5-99BB-AC2635EFB023}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclexContent\</RootDirectory>
+      <LoggerRootDirectory>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T16:22:30+07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T16:22:30+07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2012-08-28T16:39:03.5146708+07:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

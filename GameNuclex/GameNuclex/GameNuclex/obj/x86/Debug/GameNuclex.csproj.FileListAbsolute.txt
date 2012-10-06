@@ -1,0 +1,293 @@
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\obj\x86\Debug\GameNuclex.csprojResolveAssemblyReference.cache
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\shinigami-badge.xnb
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\scorpion.xnb
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\GameNuclex.exe
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\GameNuclex.pdb
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\LzmaSharp.dll
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\NMock.StrongNamed.dll
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Audio.dll
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Fonts.dll
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Game.ContentCompressor.exe
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Game.dll
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Geometry.dll
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Graphics.dll
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Graphics.SpecialEffects.dll
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Input.dll
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Math.dll
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Networking.dll
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Support.dll
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Testing.Xna.dll
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.UserInterface.dll
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Windows.Forms.dll
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\nunit.framework.dll
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\SlimDX.DirectInput.dll
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\LzmaSharp.xml
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\NMock.StrongNamed.xml
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Audio.xml
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Fonts.xml
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Game.xml
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Game.ContentCompressor.xml
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Geometry.xml
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Graphics.xml
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Graphics.SpecialEffects.xml
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Input.xml
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Math.xml
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Networking.xml
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Support.xml
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Testing.Xna.xml
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.UserInterface.xml
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Windows.Forms.xml
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\nunit.framework.xml
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\SlimDX.DirectInput.xml
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\obj\x86\Debug\GameNuclex.exe
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\obj\x86\Debug\GameNuclex.pdb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\shinigami-badge.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\scorpion.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\LzmaSharp.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\NMock.StrongNamed.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Audio.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Fonts.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Game.ContentCompressor.exe
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Game.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Geometry.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Graphics.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Graphics.SpecialEffects.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Input.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Math.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Networking.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Support.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Testing.Xna.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.UserInterface.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Windows.Forms.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\nunit.framework.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\SlimDX.DirectInput.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\LzmaSharp.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\NMock.StrongNamed.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Audio.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Fonts.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Game.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Game.ContentCompressor.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Geometry.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Graphics.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Graphics.SpecialEffects.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Input.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Math.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Networking.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Support.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Testing.Xna.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.UserInterface.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Windows.Forms.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\nunit.framework.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\SlimDX.DirectInput.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\shinigami-badge.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\scorpion.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\GameNuclex.exe
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\GameNuclex.pdb
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\LzmaSharp.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\NMock.StrongNamed.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Audio.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Fonts.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Game.ContentCompressor.exe
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Game.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Geometry.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Graphics.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Graphics.SpecialEffects.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Input.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Math.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Networking.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Support.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Testing.Xna.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.UserInterface.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Windows.Forms.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\nunit.framework.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\SlimDX.DirectInput.dll
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\LzmaSharp.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\NMock.StrongNamed.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Audio.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Fonts.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Game.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Game.ContentCompressor.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Geometry.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Graphics.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Graphics.SpecialEffects.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Input.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Math.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Networking.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Support.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Testing.Xna.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.UserInterface.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Windows.Forms.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\nunit.framework.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\SlimDX.DirectInput.xml
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\obj\x86\Debug\GameNuclex.exe
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\obj\x86\Debug\GameNuclex.pdb
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\menu-small.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\menu-start.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\cursor.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\obj\x86\Debug\GameNuclex.csprojResolveAssemblyReference.cache
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\splash-screen.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_belajar.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_galeri.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_info.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_mulai.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_settings.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\bg_menu.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\menu-start.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\menu-small.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\cursor.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\splash-screen.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_belajar.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_galeri.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_info.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_mulai.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_settings.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\bg_menu.xnb
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\menu-start.xnb
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\menu-small.xnb
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\cursor.xnb
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\splash-screen.xnb
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_belajar.xnb
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_galeri.xnb
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_info.xnb
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_mulai.xnb
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_settings.xnb
+D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\bg_menu.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\SpriteFont1.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\GameFont.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\menu-background.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\score-background.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\progress-bar.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\bg_map.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\under-const.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\btn_back.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\SelectDance\btn_left.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\SelectDance\btn_right.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\SelectDance\pilih_screen.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\SelectDance\page-title.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\SelectDance\tari-lenggang-nyai.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\About\info-background.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\Font2.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_close.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\Combo.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\bagus.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\buruk.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\keren.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\lewat.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\loadings.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\score-backgroundxxx.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\obj\x86\Debug\GameNuclex.csprojResolveAssemblyReference.cache
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Cool-Tour Dance.exe
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Cool-Tour Dance.pdb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\obj\x86\Debug\Cool-Tour Dance.exe
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\obj\x86\Debug\Cool-Tour Dance.pdb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\Sound\Backsound.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\Gallery\background.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\Gallery\list-bg.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\Gallery\gallery-bg.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\FontGalleryList.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\progress-barx.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Play\Tari Lenggang Nyai\video.xnb
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Play\Tari Lenggang Nyai\video.wmv
+D:\Project\Visual Studio 2010\XNA + Kinect\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\progress-baryyy.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\obj\x86\Debug\GameNuclex.csprojResolveAssemblyReference.cache
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\obj\x86\Debug\Cool-Tour Dance.exe
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\shinigami-badge.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\scorpion.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\menu-start.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\menu-small.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\cursor.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\splash-screen.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\bg_menu.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\progress-bar.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_belajar.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_galeri.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_info.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_mulai.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_settings.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\bg_map.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\under-const.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\menu-background.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\score-backgroundxxx.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\btn_back.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\SelectDance\btn_left.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\SelectDance\btn_right.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\SelectDance\pilih_screen.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\SelectDance\page-title.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\SelectDance\tari-lenggang-nyai.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\About\info-background.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_close.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\bagus.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\buruk.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\lewat.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\loadings.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\keren.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\score-background.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\Gallery\background.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\Gallery\list-bg.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\Gallery\gallery-bg.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\progress-barx.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\progress-baryyy.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\SpriteFont1.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\GameFont.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\Font2.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\Combo.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\FontGalleryList.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\Sound\Backsound.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Play\Tari Lenggang Nyai\video.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Play\Tari Lenggang Nyai\video.wmv
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Cool-Tour Dance.exe
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Cool-Tour Dance.pdb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\LzmaSharp.dll
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\NMock.StrongNamed.dll
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Audio.dll
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Fonts.dll
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Game.ContentCompressor.exe
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Game.dll
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Geometry.dll
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Graphics.dll
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Graphics.SpecialEffects.dll
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Input.dll
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Math.dll
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Networking.dll
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Support.dll
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Testing.Xna.dll
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.UserInterface.dll
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Windows.Forms.dll
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\nunit.framework.dll
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\SlimDX.DirectInput.dll
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\LzmaSharp.xml
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\NMock.StrongNamed.xml
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Audio.xml
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Fonts.xml
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Game.xml
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Game.ContentCompressor.xml
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Geometry.xml
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Graphics.xml
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Graphics.SpecialEffects.xml
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Input.xml
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Math.xml
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Networking.xml
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Support.xml
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Testing.Xna.xml
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.UserInterface.xml
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Nuclex.Windows.Forms.xml
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\nunit.framework.xml
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\SlimDX.DirectInput.xml
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\obj\x86\Debug\Cool-Tour Dance.pdb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\01\video.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\02\video.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\03\video.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\04\video.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\01\video.wmv
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\02\video.wmv
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\03\video.wmv
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\04\video.wmv
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_petunjuk.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\HowToPlay\1.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\HowToPlay\2.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\HowToPlay\3.xnb
+D:\Project\Visual Studio 2010\Cool-Tour Dance\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\HowToPlay\4.xnb
