@@ -134,5 +134,6 @@ namespace GameNuclex
             manager.Draw(gameTime);
             spriteBatch.End();
         }
+        
     }
 }
