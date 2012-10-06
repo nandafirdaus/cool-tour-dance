@@ -133,7 +133,7 @@
   <ItemGroup>
     <Compile Include="Data\DanceData.cs" />
     <Compile Include="Data\DanceDataFrame.cs" />
-    <Compile Include="Data\NuclexJoint.cs" />
+    <Compile Include="Data\NuclexEnum.cs" />
     <Compile Include="IO\GameIO.cs" />
     <Compile Include="NuclexPlus\Animation\Sprite.cs" />
     <Compile Include="NuclexPlus\Component\NuclexTimer.cs" />

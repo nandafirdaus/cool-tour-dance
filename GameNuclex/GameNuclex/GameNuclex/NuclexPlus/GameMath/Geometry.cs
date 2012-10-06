@@ -25,15 +25,15 @@ namespace GameNuclex.NuclexPlus.GameMath
         }
         public static double AtanDeg(double degree)
         {
-            return Math.Atan(Normalize * degree);
+            return Math.Atan(degree) * Normalize;
         }
         public static double AcosDeg(double degree)
         {
-            return Math.Acos(Normalize * degree);
+            return Math.Acos(degree) * Normalize;
         }
         public static double AsinDeg(double degree)
         {
-            return Math.Asin(Normalize * degree);
+            return Math.Asin(degree) * Normalize;
         }
 
     }
@@ -55,18 +55,18 @@ namespace GameNuclex.NuclexPlus.GameMath
         }
 
         // Contoh : Vect1 adalah siku, vect2 adalah tangan, vect3 adalah bahu //
-        public static float Get3PointPolar(Joint input1, Joint input2, Joint input3) {
+        public static float Get3JointPolar(Joint input1, Joint input2, Joint input3) {
             Vector3 i1 = new Vector3(input1.Position.X, input1.Position.Y, input1.Position.Z);
             Vector3 i2 = new Vector3(input2.Position.X, input2.Position.Y, input2.Position.Z);
             Vector3 i3 = new Vector3(input3.Position.X, input3.Position.Y, input3.Position.Z);
-            return Get3PointPolar(i1, i2, i3);
+            return Get3JointPolar(i1, i2, i3);
         }
 
-        public static float Get3PointPolar(Vector3 vect1, Vector3 vect2, Vector3 vect3) {
-            float P12 = Math.Sqrt(Math.Pow(input1.X - input2.X, 2) + Math.Pow(input1.Y - input2.Y, 2));
-            float P13 = Math.Sqrt(Math.Pow(input1.X - input3.X, 2) + Math.Pow(input1.Y - input3.Y, 2));
-            float P23 = Math.Sqrt(Math.Pow(input2.X - input3.X, 2) + Math.Pow(input2.Y - input3.Y, 2));
-            return GameMath.AcosDeg((P12*P12 + P13*P13 - P23*P23)/(2.00 * P12 * P13));
+        public static float Get3JointPolar(Vector3 vect1, Vector3 vect2, Vector3 vect3) {
+            double P12 = Math.Sqrt(Math.Pow(vect1.X - vect2.X, 2) + Math.Pow(vect1.Y - vect2.Y, 2));
+            double P13 = Math.Sqrt(Math.Pow(vect1.X - vect3.X, 2) + Math.Pow(vect1.Y - vect3.Y, 2));
+            double P23 = Math.Sqrt(Math.Pow(vect2.X - vect3.X, 2) + Math.Pow(vect2.Y - vect3.Y, 2));
+            return (float) (GameMath.AcosDeg((P12*P12 + P13*P13 - P23*P23)/(2.00 * P12 * P13)));
         }
 
         public static float Get2DPolar(Joint input1, Joint input2)
