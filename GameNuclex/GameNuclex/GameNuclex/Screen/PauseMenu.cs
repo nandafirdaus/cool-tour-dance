@@ -17,10 +17,11 @@ using GameNuclex.IO;
 using GameNuclex.Data;
 using System.Diagnostics;
 using Microsoft.Kinect;
+using Microsoft.Xna.Framework.Media;
 
 namespace GameNuclex.Screen
 {
-    public class MainMenu : Scene
+    public class PauseMenu : Scene
     {
         #region Instance Variable
 
@@ -30,6 +31,8 @@ namespace GameNuclex.Screen
         Texture2D[] MenuTextures;
         Texture2D CursorImage;
         Texture2D Background;
+
+        VideoPlayer Player;
 
         Vector2[] MenuPosition;
         ProgressBar progressBar;
@@ -42,9 +45,10 @@ namespace GameNuclex.Screen
 
         #endregion Instance Variable
 
-        public MainMenu(Engine engine) : base(engine) 
+        public PauseMenu(Engine engine, VideoPlayer player)
+            : base(engine)
         {
-            
+            this.Player = player;
         }
 
         protected override void OnEntered()
@@ -58,10 +62,10 @@ namespace GameNuclex.Screen
             //KinectSensor.KinectSensors.StatusChanged += new EventHandler<StatusChangedEventArgs>(KinectSensors_StatusChanged);
             //DiscoverKinectDevice();
 
-            if (engine.soundEffect.State != Microsoft.Xna.Framework.Audio.SoundState.Playing)
-            {
-                engine.soundEffect.Play();
-            }
+            //if (engine.soundEffect.State != Microsoft.Xna.Framework.Audio.SoundState.Playing)
+            //{
+            //    engine.soundEffect.Play();
+            //}
 
             ScreenWidth = 1024;
             ScreenHeight = 768;
@@ -71,41 +75,25 @@ namespace GameNuclex.Screen
             cursor.Initialize(CursorImage);
 
             //MouseState currentMouse = Mouse.GetState();
-            
+
             progressBar = new ProgressBar();
             progressBar.Initialize(engine.content.Load<Texture2D>("image/progress-bar"));
-            
-            Background = base.engine.content.Load<Texture2D>("image/MainMenu/bg_menu");
 
-            MenuTextures = new Texture2D[6];
+            Background = base.engine.content.Load<Texture2D>("image/Pause/pause");
 
-            // Menu Start
-            MenuTextures[0] = base.engine.content.Load<Texture2D>("image/MainMenu/btn_mulai");
-            // Menu Learn
-            MenuTextures[1] = base.engine.content.Load<Texture2D>("image/MainMenu/btn_belajar");
-            // Menu Setting
-            MenuTextures[2] = base.engine.content.Load<Texture2D>("image/MainMenu/btn_petunjuk");
-            // Menu Gallery
-            MenuTextures[3] = base.engine.content.Load<Texture2D>("image/MainMenu/btn_galeri");
-            // Menu Info
-            MenuTextures[4] = base.engine.content.Load<Texture2D>("image/MainMenu/btn_info");
-            // Exit
-            MenuTextures[5] = base.engine.content.Load<Texture2D>("image/MainMenu/btn_close");
+            MenuTextures = new Texture2D[2];
 
-            MenuPosition = new Vector2[6];
+            // Menu Kembali
+            MenuTextures[0] = base.engine.content.Load<Texture2D>("image/Pause/kembali");
+            // Menu Lanjutkan
+            MenuTextures[1] = base.engine.content.Load<Texture2D>("image/Pause/lanjut");
 
-            // Menu Start
-            MenuPosition[0] = new Vector2(ScreenWidth / 2 - MenuTextures[0].Width / 2, ScreenHeight / 2 - MenuTextures[0].Height / 2);
-            // Menu Learn
-            MenuPosition[1] = new Vector2(ScreenWidth / 4 - MenuTextures[1].Width, ScreenHeight / 4 - MenuTextures[1].Height / 2);
-            // Menu Setting
-            MenuPosition[2] = new Vector2(ScreenWidth / 4 - MenuTextures[2].Width, ScreenHeight / 4 * 3 - MenuTextures[2].Height / 2);
-            // Menu Gallery
-            MenuPosition[3] = new Vector2(ScreenWidth / 4 * 3, ScreenHeight / 4 - MenuTextures[3].Height / 2);
-            // Menu Info
-            MenuPosition[4] = new Vector2(ScreenWidth / 4 * 3, ScreenHeight / 4 * 3 - MenuTextures[4].Height / 2);
-            // Exit
-            MenuPosition[5] = new Vector2(ScreenWidth - MenuTextures[5].Width, 5);
+            MenuPosition = new Vector2[2];
+
+            // Menu kembali
+            MenuPosition[0] = new Vector2(ScreenWidth / 2 - MenuTextures[0].Width - 50, ScreenHeight / 2 - MenuTextures[0].Height / 2);
+            // Menu lanjut
+            MenuPosition[1] = new Vector2(ScreenWidth / 2 + 50, ScreenHeight / 2 - MenuTextures[1].Height / 2);
 
             base.OnEntered();
         }
@@ -119,8 +107,8 @@ namespace GameNuclex.Screen
         {
             engine.spriteBatch.Draw(Background, new Rectangle(0, 0, Background.Width, Background.Height), Color.White);
             for (int i = 0; i < MenuTextures.Length; i++)
-            {   
-                engine.spriteBatch.Draw(MenuTextures[i], MenuPosition[i], Color.White);                
+            {
+                engine.spriteBatch.Draw(MenuTextures[i], MenuPosition[i], Color.White);
             }
 
             cursor.Draw(engine.spriteBatch);
@@ -132,12 +120,12 @@ namespace GameNuclex.Screen
 
         public override void Update(Microsoft.Xna.Framework.GameTime gameTime)
         {
-            //MouseState currentMouse = Mouse.GetState();
+            MouseState currentMouse = Mouse.GetState();
 
-            //cursor.Position.X = currentMouse.X;
-            //cursor.Position.Y = currentMouse.Y;
+            cursor.Position.X = currentMouse.X;
+            cursor.Position.Y = currentMouse.Y;
 
-            UpdatePlayer();
+            //UpdatePlayer();
 
             CheckCollision(gameTime);
         }
@@ -185,25 +173,9 @@ namespace GameNuclex.Screen
                                 SelectDance selectDance = new SelectDance(engine);
                                 engine.manager.Switch(selectDance);
                                 break;
-                            case 1: 
-                                SelectDanceLearn selectDanceLearn = new SelectDanceLearn(engine);
-                                engine.manager.Switch(selectDanceLearn);
-                                break;
-                            case 2:
-                                HowToPlay howToPlay = new HowToPlay(engine);
-                                engine.manager.Switch(howToPlay);
-                                break;
-                            case 3:
-                                GalleryList gallery = new GalleryList(engine);
-                                engine.manager.Switch(gallery);
-                                break;
-                            case 4:
-                                About about = new About(engine);
-                                engine.manager.Switch(about);
-                                break;
-                            case 5:
-                                engine.nuclexKinect.StopKinect();
-                                engine.game.Exit();
+                            case 1:
+                                Player.Resume();
+                                engine.manager.Pop();
                                 break;
                             default:
                                 break;
@@ -212,7 +184,8 @@ namespace GameNuclex.Screen
 
                     return;
                 }
-                else {
+                else
+                {
                     isCollide = false;
                 }
             }
@@ -238,13 +211,13 @@ namespace GameNuclex.Screen
         private void InitializeKinectDevice()
         {
             this.KinectDevice.SkeletonStream.Enable(new TransformSmoothParameters()
-                {
-                    Smoothing = 0.5f,
-                    Correction = 0.5f,
-                    Prediction = 0.5f,
-                    JitterRadius = 0.05f,
-                    MaxDeviationRadius = 0.04f
-                });
+            {
+                Smoothing = 0.5f,
+                Correction = 0.5f,
+                Prediction = 0.5f,
+                JitterRadius = 0.05f,
+                MaxDeviationRadius = 0.04f
+            });
 
             //this.KinectDevice.SkeletonStream.Enable();
 
