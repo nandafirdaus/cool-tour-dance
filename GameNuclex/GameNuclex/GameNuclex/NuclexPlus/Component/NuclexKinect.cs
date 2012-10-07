@@ -29,6 +29,8 @@ namespace GameNuclex.NuclexPlus.Component
             }
         }
 
+
+
         private void InitializeKinectSensor(KinectSensor kinectSensor)
         {
             if (kinectSensor != null) {
@@ -63,69 +65,159 @@ namespace GameNuclex.NuclexPlus.Component
         }
         void kinectSensor_SkeletonFrameReady(object sender, SkeletonFrameReadyEventArgs e)
         {
-            using (SkeletonFrame skeletonFrame = e.OpenSkeletonFrame())
+            if (_IsSkeletonActive)
             {
-                if (skeletonFrame != null) {
-                    Skeleton[] skeletons = new Skeleton[skeletonFrame.SkeletonArrayLength];
-                    skeletonFrame.CopySkeletonDataTo(skeletons);
-                    Skeleton nearest = null;
-                    for (int ii = 0; ii < skeletons.Length; ii++)
+                using (SkeletonFrame skeletonFrame = e.OpenSkeletonFrame())
+                {
+                    if (skeletonFrame != null)
                     {
-                        if (skeletons[ii].TrackingState == SkeletonTrackingState.Tracked)
+                        Skeleton[] skeletons = new Skeleton[skeletonFrame.SkeletonArrayLength];
+                        skeletonFrame.CopySkeletonDataTo(skeletons);
+                        Skeleton nearest = null;
+                        for (int ii = 0; ii < skeletons.Length; ii++)
                         {
-                            if (nearest == null)
+                            if (skeletons[ii].TrackingState == SkeletonTrackingState.Tracked)
                             {
-                                nearest = skeletons[ii];
-                            }
-                            else
-                            {
-                                nearest = (skeletons[ii].Position.Z < nearest.Position.Z) ? skeletons[ii] : nearest;
+                                if (nearest == null)
+                                {
+                                    nearest = skeletons[ii];
+                                }
+                                else
+                                {
+                                    nearest = (skeletons[ii].Position.Z < nearest.Position.Z) ? skeletons[ii] : nearest;
+                                }
                             }
                         }
-                    }
 
-                    _MainSkeleton = nearest;
+                        _MainSkeleton = nearest;
+                    }
                 }
             }
         }
-
+        private short[] depthData = new short[640 * 480];
+        private byte[] depthRGBData = new byte[640 * 480 * 4];
         void kinectSensor_DepthFrameReady(object sender, DepthImageFrameReadyEventArgs e)
         {
-            using (DepthImageFrame depthImageFrame = e.OpenDepthImageFrame()) { 
-            
+            if (_IsDepthActive)
+            {
+                using (DepthImageFrame depthImageFrame = e.OpenDepthImageFrame())
+                {
+                    if (depthImageFrame != null)
+                    {
+                        depthImageFrame.CopyPixelDataTo(depthData);
+                        depthRGBData = ConvertDepthFrame(depthData, ((KinectSensor)sender).DepthStream);
+                        if (_DepthImage == null)
+                        {
+                            _DepthImage = new Texture2D(graphicsDevice, depthImageFrame.Width, depthImageFrame.Height);
+                        }
+                        graphicsDevice.Textures[0] = null;
+                        _DepthImage.SetData(depthRGBData);
+                    }
+                }
             }
+        }
+        // Depth Variable & Method //
+        private byte[] depthFrame32 = new byte[1228800];
+        
+        private const int RedIndex = 2;
+        private const int GreenIndex = 1;
+        private const int BlueIndex = 0;
+        // color divisors for tinting depth pixels
+        private static readonly int[] IntensityShiftByPlayerR = { 1, 2, 0, 2, 0, 0, 2, 0 };
+        private static readonly int[] IntensityShiftByPlayerG = { 1, 2, 2, 0, 2, 0, 0, 1 };
+        private static readonly int[] IntensityShiftByPlayerB = { 1, 0, 2, 2, 0, 2, 0, 2 };
+
+        private byte[] ConvertDepthFrame(short[] depthFrame, DepthImageStream depthStream)
+        {
+            int tooNearDepth = depthStream.TooNearDepth;
+            int tooFarDepth = depthStream.TooFarDepth;
+            int unknownDepth = depthStream.UnknownDepth;
+
+            for (int i16 = 0, i32 = 0; i16 < depthFrame.Length && i32 < this.depthFrame32.Length; i16++, i32 += 4)
+            {
+
+
+                int player = depthFrame[i16] & DepthImageFrame.PlayerIndexBitmask;
+                int realDepth = depthFrame[i16] >> DepthImageFrame.PlayerIndexBitmaskWidth;
+
+                // transform 13-bit depth information into an 8-bit intensity appropriate
+                // for display (we disregard information in most significant bit)
+                byte intensity = (byte)(~(realDepth >> 4));
+
+                if (player == 0 && realDepth == 0)
+                {
+                    // white 
+                    this.depthFrame32[i32 + RedIndex] = 255;
+                    this.depthFrame32[i32 + GreenIndex] = 255;
+                    this.depthFrame32[i32 + BlueIndex] = 255;
+                }
+                else if (player == 0 && realDepth == tooFarDepth)
+                {
+                    // dark purple
+                    this.depthFrame32[i32 + RedIndex] = 66;
+                    this.depthFrame32[i32 + GreenIndex] = 0;
+                    this.depthFrame32[i32 + BlueIndex] = 66;
+                }
+                else if (player == 0 && realDepth == unknownDepth)
+                {
+                    // dark brown
+                    this.depthFrame32[i32 + RedIndex] = 66;
+                    this.depthFrame32[i32 + GreenIndex] = 66;
+                    this.depthFrame32[i32 + BlueIndex] = 33;
+                }
+                else
+                {
+                    // tint the intensity by dividing by per-player values
+                    this.depthFrame32[i32 + RedIndex] = (byte)(intensity >> IntensityShiftByPlayerR[player]);
+                    this.depthFrame32[i32 + GreenIndex] = (byte)(intensity >> IntensityShiftByPlayerG[player]);
+                    this.depthFrame32[i32 + BlueIndex] = (byte)(intensity >> IntensityShiftByPlayerB[player]);
+                }
+            }
+
+            return this.depthFrame32.Take(depthFrame.Length * 4).ToArray();
+        }
+
+        public static T[] SubArray<T>(this T[] data, int index, int length)
+        {
+            T[] result = new T[length];
+            Array.Copy(data, index, result, 0, length);
+            return result;
         }
 
 
-        byte red, green, blue, alpha;
+
+        private byte red, green, blue, alpha;
+        private byte[] pixelData = new byte[1228800];
         void kinectSensor_ColorFrameReady(object sender, ColorImageFrameReadyEventArgs e)
         {
-            return;
-            using (ColorImageFrame colorImageFrame = e.OpenColorImageFrame())
+            if (_IsColorActive)
             {
-                if (colorImageFrame != null)
+                using (ColorImageFrame colorImageFrame = e.OpenColorImageFrame())
                 {
-                    
-                    byte[] pixelData = new byte[colorImageFrame.PixelDataLength];
-                    colorImageFrame.CopyPixelDataTo(pixelData);
-                    // remove blue layer //
-                    for (int ii = 0; ii < pixelData.Length; ii+=4) {
-                        red = pixelData[ii];
-                        green = pixelData[ii + 1];
-                        blue = pixelData[ii + 2];
-                        alpha = (byte) 255;
-                        pixelData[ii] = blue;
-                        pixelData[ii + 1] = green;
-                        pixelData[ii + 2] = red;
-                        pixelData[ii + 3] = alpha;
-                    }
-
-                    if (_ColorImage == null)
+                    if (colorImageFrame != null)
                     {
-                        _ColorImage = new Texture2D(graphicsDevice, colorImageFrame.Width, colorImageFrame.Height);
+
+                        colorImageFrame.CopyPixelDataTo(pixelData);
+                        // remove blue layer //
+                        for (int ii = 0; ii < pixelData.Length; ii += 4)
+                        {
+                            red = pixelData[ii];
+                            green = pixelData[ii + 1];
+                            blue = pixelData[ii + 2];
+                            alpha = (byte)255;
+                            pixelData[ii] = blue;
+                            pixelData[ii + 1] = green;
+                            pixelData[ii + 2] = red;
+                            pixelData[ii + 3] = alpha;
+                        }
+
+                        if (_ColorImage == null)
+                        {
+                            _ColorImage = new Texture2D(graphicsDevice, colorImageFrame.Width, colorImageFrame.Height);
+                        }
+                        graphicsDevice.Textures[0] = null;
+                        _ColorImage.SetData(pixelData);
                     }
-                    graphicsDevice.Textures[0] = null;
-                    _ColorImage.SetData(pixelData);
                 }
             }
         }
@@ -139,13 +231,26 @@ namespace GameNuclex.NuclexPlus.Component
         Skeleton _MainSkeleton;
         public Skeleton MainSkeleton { get { return _MainSkeleton; } }
 
+        bool _IsDepthActive;
+        bool _IsColorActive;
+        bool _IsSkeletonActive;
+
         GraphicsDevice graphicsDevice;
         public NuclexKinect(GraphicsDevice graphicsDevice)
         {
             this.graphicsDevice = graphicsDevice;
-            DiscoverKinectSensor();
-            
+            this._IsSkeletonActive = this._IsDepthActive = this._IsColorActive = false;
+            DiscoverKinectSensor();            
         }
+
+        public NuclexKinect(GraphicsDevice graphicsDevice, bool color, bool depth, bool skeleton) {
+            this._IsColorActive = color;
+            this._IsDepthActive = depth;
+            this._IsSkeletonActive = skeleton;
+            this.graphicsDevice = graphicsDevice;
+            DiscoverKinectSensor();
+        }
+
         public void DiscoverKinectSensor()
         {
             KinectSensor.KinectSensors.StatusChanged += new EventHandler<StatusChangedEventArgs>(KinectSensors_StatusChanged);            
