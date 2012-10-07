@@ -73,7 +73,7 @@ namespace GameNuclex
             soundEffect = Content.Load<SoundEffect>("Sound/Backsound");
             soundEffectInstance = soundEffect.CreateInstance();
 
-            nucKinect = new NuclexKinect(this.GraphicsDevice);
+            nucKinect = new NuclexKinect(this.GraphicsDevice, false, true, true);
 
             soundEffectInstance.IsLooped = true;
 
