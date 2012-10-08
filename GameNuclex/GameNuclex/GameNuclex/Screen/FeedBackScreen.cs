@@ -21,8 +21,7 @@ namespace GameNuclex.Screen
         Texture2D CursorImage;
         Texture2D ScoreBackground;
         private KinectSensor KinectDevice;
-        int Score, TotalPerfect, TotalGood, TotalBad, TotalMiss;
-
+        
         SpriteFont fontNilai;
 
         Cursor cursor;
@@ -32,14 +31,9 @@ namespace GameNuclex.Screen
 
         #endregion InstanceVariable
 
-        public FeedBackScreen(Engine engine, int score, int perfect, int good, int bad, int miss)
+        public FeedBackScreen(Engine engine)
             : base(engine)
         {
-            this.Score = score;
-            this.TotalPerfect = perfect;
-            this.TotalGood = good;
-            this.TotalBad = bad;
-            this.TotalMiss = miss;
         }
 
         protected override void OnEntered()
@@ -109,25 +103,25 @@ namespace GameNuclex.Screen
             engine.spriteBatch.DrawString(fontNilai, "Nilai",
                 new Vector2((Background.Width) / 2 - stringLength.X / 2, 250), Color.White);
 
-            stringLength = fontNilai.MeasureString(this.Score + "");
-            engine.spriteBatch.DrawString(fontNilai, "" + this.Score,
-                new Vector2((Background.Width) / 2 - stringLength.X / 2, 290), Color.White);
+            //stringLength = fontNilai.MeasureString(this.Score + "");
+            //engine.spriteBatch.DrawString(fontNilai, "" + this.Score,
+            //    new Vector2((Background.Width) / 2 - stringLength.X / 2, 290), Color.White);
 
-            stringLength = fontNilai.MeasureString("Keren x" + this.TotalPerfect);
-            engine.spriteBatch.DrawString(fontNilai, "Keren x" + this.TotalPerfect,
-                new Vector2((Background.Width) / 2 - stringLength.X / 2, 350), Color.White);
+            //stringLength = fontNilai.MeasureString("Keren x" + this.TotalPerfect);
+            //engine.spriteBatch.DrawString(fontNilai, "Keren x" + this.TotalPerfect,
+            //    new Vector2((Background.Width) / 2 - stringLength.X / 2, 350), Color.White);
 
-            stringLength = fontNilai.MeasureString("Bagus x" + this.TotalGood);
-            engine.spriteBatch.DrawString(fontNilai, "Bagus x" + this.TotalGood,
-                new Vector2((Background.Width) / 2 - stringLength.X / 2, 390), Color.White);
+            //stringLength = fontNilai.MeasureString("Bagus x" + this.TotalGood);
+            //engine.spriteBatch.DrawString(fontNilai, "Bagus x" + this.TotalGood,
+            //    new Vector2((Background.Width) / 2 - stringLength.X / 2, 390), Color.White);
 
-            stringLength = fontNilai.MeasureString("Buruk x" + this.TotalBad);
-            engine.spriteBatch.DrawString(fontNilai, "Buruk x" + this.TotalBad,
-                new Vector2((Background.Width) / 2 - stringLength.X / 2, 430), Color.White);
+            //stringLength = fontNilai.MeasureString("Buruk x" + this.TotalBad);
+            //engine.spriteBatch.DrawString(fontNilai, "Buruk x" + this.TotalBad,
+            //    new Vector2((Background.Width) / 2 - stringLength.X / 2, 430), Color.White);
 
-            stringLength = fontNilai.MeasureString("Lewat x" + this.TotalMiss);
-            engine.spriteBatch.DrawString(fontNilai, "Lewat x" + this.TotalMiss,
-                new Vector2((Background.Width) / 2 - stringLength.X / 2, 470), Color.White);
+            //stringLength = fontNilai.MeasureString("Lewat x" + this.TotalMiss);
+            //engine.spriteBatch.DrawString(fontNilai, "Lewat x" + this.TotalMiss,
+            //    new Vector2((Background.Width) / 2 - stringLength.X / 2, 470), Color.White);
 
             cursor.Draw(engine.spriteBatch);
 
@@ -159,8 +153,9 @@ namespace GameNuclex.Screen
 
                 if (progressBar.isFull)
                 {
-                    MainMenu mainMenu = new MainMenu(engine);
-                    engine.manager.Switch(mainMenu);
+                    //MainMenu mainMenu = new MainMenu(engine);
+                    LearnScreen screen = new LearnScreen(engine);
+                    engine.manager.Switch(screen);
                 }
 
                 return;

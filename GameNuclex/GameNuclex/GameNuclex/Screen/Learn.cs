@@ -202,9 +202,10 @@ namespace GameNuclex.Screen
 
             if (player != null && hasPlayed && player.State == MediaState.Stopped)
             {
-                ScoreScreen scoreScreen = new ScoreScreen(engine, scoringSystem.TotalScore, scoringSystem.TotalPerfect,
-                    scoringSystem.TotalGood, scoringSystem.TotalBad, scoringSystem.TotalMiss);
-                engine.manager.Switch(scoreScreen);
+                //ScoreScreen scoreScreen = new ScoreScreen(engine, scoringSystem.TotalScore, scoringSystem.TotalPerfect,
+                //    scoringSystem.TotalGood, scoringSystem.TotalBad, scoringSystem.TotalMiss);
+                FeedBackScreen feedBack = new FeedBackScreen(engine);
+                engine.manager.Switch(feedBack);
             }
         }
 

@@ -56,7 +56,6 @@ namespace GameNuclex.IO
                 Trace.WriteLine(filePath[n]);
                 data.AddDataFrame(LoadFile(filePath[n]));
             }
-            
             return data;
         }
 
@@ -71,13 +70,13 @@ namespace GameNuclex.IO
             Vector3[] result = new Vector3[20];
             string[] arr;
             string[] delimiters = new string[] { ", " };
-            for (int n = 2; n < 22; n++)
+            for (int n = 2; n < fileString.Length; n++)
             {
                 arr = fileString[n].Split(delimiters, StringSplitOptions.None);
                 result[n-2] = new Vector3(float.Parse(arr[1]), float.Parse(arr[2]), float.Parse(arr[3]));
             }
-            NuclexEnum.PlayerPose pose = (fileString[fileString.Length - 1] == "Default") ? NuclexEnum.PlayerPose.Default : NuclexEnum.PlayerPose.SeatMode;
-            DanceDataFrame danceData = new DanceDataFrame(danceName, timestamp, result, pose);
+
+            DanceDataFrame danceData = new DanceDataFrame(danceName, timestamp, result);
 
             return danceData;
         }

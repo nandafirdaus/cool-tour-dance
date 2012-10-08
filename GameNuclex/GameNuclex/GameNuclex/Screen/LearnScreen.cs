@@ -37,6 +37,11 @@ namespace GameNuclex.Screen
             //KinectSensor.KinectSensors.StatusChanged += new EventHandler<StatusChangedEventArgs>(KinectSensors_StatusChanged);
             //DiscoverKinectDevice();
 
+            if (engine.soundEffect.State != Microsoft.Xna.Framework.Audio.SoundState.Playing)
+            {
+                engine.soundEffect.Play();
+            }
+
             CursorImage = engine.content.Load<Texture2D>("image/cursor");
             Background = engine.content.Load<Texture2D>("image/under-const");
             ButtonBack = engine.content.Load<Texture2D>("image/btn_back");
