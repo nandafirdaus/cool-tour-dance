@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\shinigami-badge.xnb</Output>
-      <Time>2012-10-04T02:05:11.27865+07:00</Time>
+      <Output>D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\shinigami-badge.xnb</Output>
+      <Time>2012-09-09T00:27:16.7994+07:00</Time>
     </Item>
     <Item>
       <Source>image\scorpion.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\scorpion.xnb</Output>
-      <Time>2012-10-04T02:05:11.27665+07:00</Time>
+      <Output>D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\scorpion.xnb</Output>
+      <Time>2012-09-09T00:27:16.7924+07:00</Time>
     </Item>
     <Item>
       <Source>image\menu-start.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\menu-start.xnb</Output>
-      <Time>2012-10-04T02:05:11.26565+07:00</Time>
+      <Output>D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\menu-start.xnb</Output>
+      <Time>2012-09-09T00:27:16.7854+07:00</Time>
     </Item>
     <Item>
       <Source>image\menu-small.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\menu-small.xnb</Output>
-      <Time>2012-10-04T02:05:11.26465+07:00</Time>
+      <Output>D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\menu-small.xnb</Output>
+      <Time>2012-09-09T00:27:16.7844+07:00</Time>
     </Item>
     <Item>
       <Source>image\cursor.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\cursor.xnb</Output>
-      <Time>2012-10-04T02:05:11.26265+07:00</Time>
+      <Output>D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\cursor.xnb</Output>
+      <Time>2012-09-09T00:27:16.7844+07:00</Time>
     </Item>
     <Item>
       <Source>image\splash-screen.png</Source>
@@ -52,26 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\splash-screen.xnb</Output>
-      <Time>2012-10-04T02:05:11.28165+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\MainMenu\bg_menu.png</Source>
-      <Name>image\MainMenu\bg_menu</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\bg_menu.xnb</Output>
-      <Time>2012-10-04T02:05:11.21365+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\progress-bar.png</Source>
-      <Name>image\progress-bar</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\progress-bar.xnb</Output>
-      <Time>2012-10-04T02:05:11.26765+07:00</Time>
+      <Output>D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\splash-screen.xnb</Output>
+      <Time>2012-09-09T00:27:16.8094+07:00</Time>
     </Item>
     <Item>
       <Source>image\MainMenu\btn_belajar.png</Source>
@@ -79,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_belajar.xnb</Output>
-      <Time>2012-10-04T02:05:11.21565+07:00</Time>
+      <Output>D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_belajar.xnb</Output>
+      <Time>2012-09-09T00:27:16.7554+07:00</Time>
     </Item>
     <Item>
       <Source>image\MainMenu\btn_galeri.png</Source>
@@ -88,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_galeri.xnb</Output>
-      <Time>2012-10-04T02:05:11.22065+07:00</Time>
+      <Output>D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_galeri.xnb</Output>
+      <Time>2012-09-09T00:27:16.7634+07:00</Time>
     </Item>
     <Item>
       <Source>image\MainMenu\btn_info.png</Source>
@@ -97,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_info.xnb</Output>
-      <Time>2012-10-04T02:05:11.22265+07:00</Time>
+      <Output>D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_info.xnb</Output>
+      <Time>2012-09-09T00:27:16.7694+07:00</Time>
     </Item>
     <Item>
       <Source>image\MainMenu\btn_mulai.png</Source>
@@ -106,8 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_mulai.xnb</Output>
-      <Time>2012-10-04T02:05:11.22465+07:00</Time>
+      <Output>D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_mulai.xnb</Output>
+      <Time>2012-09-09T00:27:16.7774+07:00</Time>
     </Item>
     <Item>
       <Source>image\MainMenu\btn_settings.png</Source>
@@ -115,391 +97,17 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_settings.xnb</Output>
-      <Time>2012-10-04T02:05:11.22565+07:00</Time>
+      <Output>D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_settings.xnb</Output>
+      <Time>2012-09-09T00:27:16.7834+07:00</Time>
     </Item>
     <Item>
-      <Source>image\bg_map.png</Source>
-      <Name>image\bg_map</Name>
+      <Source>image\MainMenu\bg_menu.png</Source>
+      <Name>image\MainMenu\bg_menu</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\bg_map.xnb</Output>
-      <Time>2012-10-04T02:05:11.25865+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\under-const.png</Source>
-      <Name>image\under-const</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\under-const.xnb</Output>
-      <Time>2012-10-04T02:05:11.28565+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\PlayScreen\menu-background.png</Source>
-      <Name>image\PlayScreen\menu-background</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\menu-background.xnb</Output>
-      <Time>2012-10-04T02:05:11.23865+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\PlayScreen\score-backgroundxxx.png</Source>
-      <Name>image\PlayScreen\score-backgroundxxx</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\score-backgroundxxx.xnb</Output>
-      <Time>2012-10-04T02:05:11.24165+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\btn_back.png</Source>
-      <Name>image\btn_back</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\btn_back.xnb</Output>
-      <Time>2012-10-04T02:05:11.26065+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\SelectDance\btn_left.png</Source>
-      <Name>image\SelectDance\btn_left</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\SelectDance\btn_left.xnb</Output>
-      <Time>2012-10-04T02:05:11.24365+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\SelectDance\btn_right.png</Source>
-      <Name>image\SelectDance\btn_right</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\SelectDance\btn_right.xnb</Output>
-      <Time>2012-10-04T02:05:11.24565+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\SelectDance\pilih_screen.png</Source>
-      <Name>image\SelectDance\pilih_screen</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\SelectDance\pilih_screen.xnb</Output>
-      <Time>2012-10-04T02:05:11.25065+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\SelectDance\page-title.png</Source>
-      <Name>image\SelectDance\page-title</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\SelectDance\page-title.xnb</Output>
-      <Time>2012-10-04T02:05:11.24765+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\SelectDance\tari-lenggang-nyai.jpg</Source>
-      <Name>image\SelectDance\tari-lenggang-nyai</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\SelectDance\tari-lenggang-nyai.xnb</Output>
-      <Time>2012-10-04T02:05:11.25365+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\About\info-background.png</Source>
-      <Name>image\About\info-background</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\About\info-background.xnb</Output>
-      <Time>2012-10-04T02:05:11.19865+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\MainMenu\btn_close.png</Source>
-      <Name>image\MainMenu\btn_close</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_close.xnb</Output>
-      <Time>2012-10-04T02:05:11.21665+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\PlayScreen\bagus.png</Source>
-      <Name>image\PlayScreen\bagus</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\bagus.xnb</Output>
-      <Time>2012-10-04T02:05:11.22765+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\PlayScreen\buruk.png</Source>
-      <Name>image\PlayScreen\buruk</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\buruk.xnb</Output>
-      <Time>2012-10-04T02:05:11.22965+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\PlayScreen\lewat.png</Source>
-      <Name>image\PlayScreen\lewat</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\lewat.xnb</Output>
-      <Time>2012-10-04T02:05:11.23165+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\PlayScreen\loadings.png</Source>
-      <Name>image\PlayScreen\loadings</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\loadings.xnb</Output>
-      <Time>2012-10-04T02:05:11.23465+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\PlayScreen\keren.png</Source>
-      <Name>image\PlayScreen\keren</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\keren.xnb</Output>
-      <Time>2012-10-04T02:05:11.23065+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\PlayScreen\score-background.png</Source>
-      <Name>image\PlayScreen\score-background</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\PlayScreen\score-background.xnb</Output>
-      <Time>2012-10-04T02:05:11.24065+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\Gallery\background.png</Source>
-      <Name>image\Gallery\background</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\Gallery\background.xnb</Output>
-      <Time>2012-10-04T02:05:11.20365+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\Gallery\list-bg.png</Source>
-      <Name>image\Gallery\list-bg</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\Gallery\list-bg.xnb</Output>
-      <Time>2012-10-04T02:05:11.20765+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\Gallery\gallery-bg.png</Source>
-      <Name>image\Gallery\gallery-bg</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\Gallery\gallery-bg.xnb</Output>
-      <Time>2012-10-04T02:05:11.20565+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\progress-barx.png</Source>
-      <Name>image\progress-barx</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\progress-barx.xnb</Output>
-      <Time>2012-10-04T02:05:11.27065+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\progress-baryyy.png</Source>
-      <Name>image\progress-baryyy</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\progress-baryyy.xnb</Output>
-      <Time>2012-10-04T02:05:11.27365+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\MainMenu\btn_petunjuk.png</Source>
-      <Name>image\MainMenu\btn_petunjuk</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\btn_petunjuk.xnb</Output>
-      <Time>2012-10-06T02:57:47.9022+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\HowToPlay\1.png</Source>
-      <Name>image\HowToPlay\1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\HowToPlay\1.xnb</Output>
-      <Time>2012-10-06T02:57:47.8822+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\HowToPlay\2.png</Source>
-      <Name>image\HowToPlay\2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\HowToPlay\2.xnb</Output>
-      <Time>2012-10-06T02:57:47.8922+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\HowToPlay\3.png</Source>
-      <Name>image\HowToPlay\3</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\HowToPlay\3.xnb</Output>
-      <Time>2012-10-06T02:57:47.8922+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\HowToPlay\4.png</Source>
-      <Name>image\HowToPlay\4</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\HowToPlay\4.xnb</Output>
-      <Time>2012-10-06T02:57:47.9022+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\Pause\kembali.png</Source>
-      <Name>image\Pause\kembali</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\Pause\kembali.xnb</Output>
-      <Time>2012-10-06T21:27:01.8134+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\Pause\lanjut.png</Source>
-      <Name>image\Pause\lanjut</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\Pause\lanjut.xnb</Output>
-      <Time>2012-10-06T21:27:01.8134+07:00</Time>
-    </Item>
-    <Item>
-      <Source>image\Pause\pause.png</Source>
-      <Name>image\Pause\pause</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\Pause\pause.xnb</Output>
-      <Time>2012-10-06T21:27:01.8134+07:00</Time>
-    </Item>
-    <Item>
-      <Source>SpriteFont1.spritefont</Source>
-      <Name>SpriteFont1</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
-      <Time>2012-10-04T02:05:10.12865+07:00</Time>
-    </Item>
-    <Item>
-      <Source>GameFont.spritefont</Source>
-      <Name>GameFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\GameFont.xnb</Output>
-      <Time>2012-10-04T02:05:09.25965+07:00</Time>
-    </Item>
-    <Item>
-      <Source>Font2.spritefont</Source>
-      <Name>Font2</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\Font2.xnb</Output>
-      <Time>2012-10-04T02:05:09.25665+07:00</Time>
-    </Item>
-    <Item>
-      <Source>Combo.spritefont</Source>
-      <Name>Combo</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\Combo.xnb</Output>
-      <Time>2012-10-04T02:05:09.25465+07:00</Time>
-    </Item>
-    <Item>
-      <Source>FontGalleryList.spritefont</Source>
-      <Name>FontGalleryList</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\FontGalleryList.xnb</Output>
-      <Time>2012-10-04T02:05:09.25865+07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sound\Backsound.wav</Source>
-      <Name>Sound\Backsound</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\Sound\Backsound.xnb</Output>
-      <Time>2012-10-04T02:05:10.06665+07:00</Time>
-    </Item>
-    <Item>
-      <Source>data\Dance\Play\Tari Lenggang Nyai\video.wmv</Source>
-      <Name>data\Dance\Play\Tari Lenggang Nyai\video</Name>
-      <Importer>WmvImporter</Importer>
-      <Processor>VideoProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Play\Tari Lenggang Nyai\video.xnb</Output>
-      <Extra>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Play\Tari Lenggang Nyai\video.wmv</Extra>
-      <Time>2012-10-04T02:05:08.47365+07:00</Time>
-    </Item>
-    <Item>
-      <Source>data\Dance\Learn\Tari Lenggang Nyai\01\video.wmv</Source>
-      <Name>data\Dance\Learn\Tari Lenggang Nyai\01\video</Name>
-      <Importer>WmvImporter</Importer>
-      <Processor>VideoProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\01\video.xnb</Output>
-      <Extra>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\01\video.wmv</Extra>
-      <Time>2012-10-06T02:57:43.9722+07:00</Time>
-    </Item>
-    <Item>
-      <Source>data\Dance\Learn\Tari Lenggang Nyai\02\video.wmv</Source>
-      <Name>data\Dance\Learn\Tari Lenggang Nyai\02\video</Name>
-      <Importer>WmvImporter</Importer>
-      <Processor>VideoProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\02\video.xnb</Output>
-      <Extra>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\02\video.wmv</Extra>
-      <Time>2012-10-06T02:57:44.4922+07:00</Time>
-    </Item>
-    <Item>
-      <Source>data\Dance\Learn\Tari Lenggang Nyai\03\video.wmv</Source>
-      <Name>data\Dance\Learn\Tari Lenggang Nyai\03\video</Name>
-      <Importer>WmvImporter</Importer>
-      <Processor>VideoProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\03\video.xnb</Output>
-      <Extra>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\03\video.wmv</Extra>
-      <Time>2012-10-06T02:57:44.9522+07:00</Time>
-    </Item>
-    <Item>
-      <Source>data\Dance\Learn\Tari Lenggang Nyai\04\video.wmv</Source>
-      <Name>data\Dance\Learn\Tari Lenggang Nyai\04\video</Name>
-      <Importer>WmvImporter</Importer>
-      <Processor>VideoProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\04\video.xnb</Output>
-      <Extra>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\data\Dance\Learn\Tari Lenggang Nyai\04\video.wmv</Extra>
-      <Time>2012-10-06T02:57:45.9022+07:00</Time>
+      <Output>D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\image\MainMenu\bg_menu.xnb</Output>
+      <Time>2012-09-09T00:27:16.7474+07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -507,10 +115,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclexContent\</RootDirectory>
-      <LoggerRootDirectory>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\</LoggerRootDirectory>
-      <IntermediateDirectory>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclexContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>D:\Code\Mercurial Repository\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclexContent\</RootDirectory>
+      <LoggerRootDirectory>D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclexContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\Code\GitRepository\org.game.cooltour\GameNuclex\GameNuclex\GameNuclex\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

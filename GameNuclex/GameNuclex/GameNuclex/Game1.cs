@@ -73,7 +73,7 @@ namespace GameNuclex
             soundEffect = Content.Load<SoundEffect>("Sound/Backsound");
             soundEffectInstance = soundEffect.CreateInstance();
 
-            nucKinect = new NuclexKinect(this.GraphicsDevice, false, true, true);
+            nucKinect = new NuclexKinect(this.GraphicsDevice);
 
             soundEffectInstance.IsLooped = true;
 
@@ -88,6 +88,10 @@ namespace GameNuclex
 
             SplashScreen splash = new SplashScreen(engine);
             manager.Switch(splash);
+
+            //ScoreScreen scoreScreen = new ScoreScreen(engine, 200000, 50,
+            //        10, 20, 50, "Tari Lenggang Nyai");
+            //engine.manager.Switch(scoreScreen);
 
             //PauseMenu pause = new PauseMenu(engine);
             //manager.Switch(pause);
@@ -134,6 +138,5 @@ namespace GameNuclex
             manager.Draw(gameTime);
             spriteBatch.End();
         }
-        
     }
 }
