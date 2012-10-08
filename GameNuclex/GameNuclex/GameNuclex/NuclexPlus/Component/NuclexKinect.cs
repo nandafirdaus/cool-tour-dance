@@ -35,7 +35,7 @@ namespace GameNuclex.NuclexPlus.Component
         {
             if (kinectSensor != null) {
                 kinectSensor.ColorStream.Enable(ColorImageFormat.RgbResolution640x480Fps30);
-                kinectSensor.DepthStream.Enable(DepthImageFormat.Resolution640x480Fps30);
+                kinectSensor.DepthStream.Enable(DepthImageFormat.Resolution320x240Fps30);
                 kinectSensor.SkeletonStream.Enable(new TransformSmoothParameters()
                 {
                     Smoothing = 0.5f,
@@ -94,8 +94,8 @@ namespace GameNuclex.NuclexPlus.Component
                 }
             }
         }
-        private short[] depthData = new short[640 * 480];
-        private byte[] depthRGBData = new byte[640 * 480 * 4];
+        private short[] depthData = new short[320 * 240];
+        private byte[] depthRGBData = new byte[320 * 240 * 4];
         void kinectSensor_DepthFrameReady(object sender, DepthImageFrameReadyEventArgs e)
         {
             if (_IsDepthActive)
@@ -117,11 +117,12 @@ namespace GameNuclex.NuclexPlus.Component
             }
         }
         // Depth Variable & Method //
-        private byte[] depthFrame32 = new byte[1228800];
+        private byte[] depthFrame32 = new byte[320*240*4];
         
         private const int RedIndex = 2;
         private const int GreenIndex = 1;
         private const int BlueIndex = 0;
+        private const int AlphaIndex = 3;
         // color divisors for tinting depth pixels
         private static readonly int[] IntensityShiftByPlayerR = { 1, 2, 0, 2, 0, 0, 2, 0 };
         private static readonly int[] IntensityShiftByPlayerG = { 1, 2, 2, 0, 2, 0, 0, 1 };
@@ -143,7 +144,7 @@ namespace GameNuclex.NuclexPlus.Component
                 // transform 13-bit depth information into an 8-bit intensity appropriate
                 // for display (we disregard information in most significant bit)
                 byte intensity = (byte)(~(realDepth >> 4));
-
+                this.depthFrame32[i32 + AlphaIndex] = 255;
                 if (player == 0 && realDepth == 0)
                 {
                     // white 
@@ -174,17 +175,8 @@ namespace GameNuclex.NuclexPlus.Component
                 }
             }
 
-            return this.depthFrame32.Take(depthFrame.Length * 4).ToArray();
+            return this.depthFrame32;
         }
-
-        public static T[] SubArray<T>(this T[] data, int index, int length)
-        {
-            T[] result = new T[length];
-            Array.Copy(data, index, result, 0, length);
-            return result;
-        }
-
-
 
         private byte red, green, blue, alpha;
         private byte[] pixelData = new byte[1228800];

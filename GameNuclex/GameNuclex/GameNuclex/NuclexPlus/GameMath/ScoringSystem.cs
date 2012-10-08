@@ -142,16 +142,16 @@ namespace GameNuclex.NuclexPlus.GameMath
             float[] degree = new float[12];
             degree[0] = Geometry.Get3JointPolar(skeletonOri[NuclexEnum.ElbowLeft], skeletonOri[NuclexEnum.WristLeft], skeletonOri[NuclexEnum.ShoulderLeft]);
             degree[1] = Geometry.Get3JointPolar(skeletonData.Joints[JointType.ElbowLeft], skeletonData.Joints[JointType.WristLeft], skeletonData.Joints[JointType.ShoulderLeft]);
-            
+            Trace.WriteLine("Siku Kiri : " + degree[1]);
             degree[2] = Geometry.Get3JointPolar(skeletonOri[NuclexEnum.ElbowRight], skeletonOri[NuclexEnum.WristRight], skeletonOri[NuclexEnum.ShoulderRight]);
             degree[3] = Geometry.Get3JointPolar(skeletonData.Joints[JointType.ElbowRight], skeletonData.Joints[JointType.WristRight], skeletonData.Joints[JointType.ShoulderRight]);
-            
+            Trace.WriteLine("Siku Kanan : " + degree[3]);
             degree[4] = Geometry.Get3JointPolar(skeletonOri[NuclexEnum.ShoulderLeft], skeletonOri[NuclexEnum.ElbowLeft], skeletonOri[NuclexEnum.ShoulderCenter]);
             degree[5] = Geometry.Get3JointPolar(skeletonData.Joints[JointType.ShoulderLeft], skeletonData.Joints[JointType.ElbowLeft], skeletonData.Joints[JointType.ShoulderCenter]);
-
+            Trace.WriteLine("Bahu Kiri : " + degree[5]);
             degree[6] = Geometry.Get3JointPolar(skeletonOri[NuclexEnum.ShoulderRight], skeletonOri[NuclexEnum.ElbowRight], skeletonOri[NuclexEnum.ShoulderCenter]);
             degree[7] = Geometry.Get3JointPolar(skeletonData.Joints[JointType.ShoulderRight], skeletonData.Joints[JointType.ElbowRight], skeletonData.Joints[JointType.ShoulderCenter]);
-
+            Trace.WriteLine("Bahu Kiri : " + degree[7]);
             if (pose.Equals(NuclexEnum.PlayerPose.Default))
             {
                 degree[8] = Geometry.Get3JointPolar(skeletonOri[NuclexEnum.KneeRight], skeletonOri[NuclexEnum.AnkleRight], skeletonOri[NuclexEnum.HipRight]);
