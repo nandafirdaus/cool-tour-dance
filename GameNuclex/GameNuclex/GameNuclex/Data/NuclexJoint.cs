@@ -6,9 +6,9 @@ using Microsoft.Kinect;
 
 namespace GameNuclex.Data
 {
-    public class NuclexEnum
+    public class NuclexJoint
     {
-        public enum PlayerPose { Default, SeatMode };
+
         public const int
             Head = 0,
             ShoulderCenter = 1,

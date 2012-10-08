@@ -200,7 +200,7 @@ namespace GameNuclex.Screen
             if (player != null && hasPlayed && player.State == MediaState.Stopped)
             {
                 ScoreScreen scoreScreen = new ScoreScreen(engine, scoringSystem.TotalScore, scoringSystem.TotalPerfect,
-                    scoringSystem.TotalGood, scoringSystem.TotalBad, scoringSystem.TotalMiss);
+                    scoringSystem.TotalGood, scoringSystem.TotalBad, scoringSystem.TotalMiss, this.DanceName);
                 engine.manager.Switch(scoreScreen);
             }
         }
