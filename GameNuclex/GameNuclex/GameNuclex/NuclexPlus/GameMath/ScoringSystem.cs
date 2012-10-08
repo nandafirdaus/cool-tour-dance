@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework;
 using GameNuclex.Data;
 using GameNuclex.NuclexPlus.GameMath;
 using System.Diagnostics;
+using GameNuclex.NuclexPlus.Component;
 namespace GameNuclex.NuclexPlus.GameMath
 {
     public class ScoringSystem
@@ -15,19 +16,20 @@ namespace GameNuclex.NuclexPlus.GameMath
         
         const int catPerfect = 3, catGood = 2, catBad = 1, catMiss = 0;
         int _Combo;
+        bool _MomentCombo;
         const int totalComparation = 0;
         const int limitPerfect = 15, limitGood = 12, limitBad = 8;
 
         const float permittedError = 20;
-        public int Combo { get { return _Combo; } set { _Combo = value; } }
-
+        public int Combo { get { return _Combo; } }
+        public bool MomentCombo { get { return _MomentCombo; } }
         int _TotalPerfect, _TotalGood, _TotalBad, _TotalMiss;
-
+        int _TotalFrame;
         public int TotalPerfect { get { return _TotalPerfect; } }
         public int TotalGood { get { return _TotalGood; } }
         public int TotalBad { get { return _TotalBad; } }
         public int TotalMiss { get { return _TotalMiss; } }
-
+        public int TotalFrame { get { return _TotalFrame; } }
         int _TotalScore;
         public int TotalScore { get { return _TotalScore; } set { _TotalScore = value; } }
 
@@ -47,8 +49,8 @@ namespace GameNuclex.NuclexPlus.GameMath
         {
             this.danceData = danceData;
             usedScoringDegree = scoringDegree;
-            _TotalScore = 0;
-            _TotalPerfect = _TotalGood = _TotalBad = _TotalMiss = 0;
+            _TotalFrame = danceData.listOfFrame.Count;
+            _TotalPerfect = _TotalGood = _TotalBad = _TotalMiss = _TotalScore = 0;
         }
 
         public int CompareSkeleton3Dim(Vector3[] skeletonOri, Skeleton skeletonData, ScoringDegree scoringType)
@@ -227,14 +229,14 @@ namespace GameNuclex.NuclexPlus.GameMath
             index = 0;
             TotalScore = 0;
             _TotalMiss = _TotalPerfect = _TotalGood = _TotalBad = 0;
-            Combo = 0;
+            _Combo = 0;
         }
 
         int index = 0;
         bool hasChecked = false;
         int MaxCorrect = 0;
         int MaxCorrectCategory;
-
+        
         public void UpdateTime(Skeleton skeletonData, long time)
         {
 
@@ -288,24 +290,32 @@ namespace GameNuclex.NuclexPlus.GameMath
                                 {
                                     _MomentPerfect = true;
                                     _TotalPerfect++;
+                                    _Combo++;
+                                    _MomentCombo = true;
                                     break;
                                 }
                             case (catGood):
                                 {
                                     _MomentGood = true;
                                     _TotalGood++;
+                                    _Combo++;
+                                    _MomentCombo = true;
                                     break;
                                 }
                             case (catBad):
                                 {
                                     _MomentBad = true;
                                     _TotalBad++;
+                                    _Combo = 0;
+                                    _MomentCombo = false;
                                     break;
                                 }
                             case (catMiss):
                                 {
                                     _MomentMiss = true;
                                     _TotalMiss++;
+                                    _Combo = 0;
+                                    _MomentCombo = false;
                                     break;
                                 }
                         }
