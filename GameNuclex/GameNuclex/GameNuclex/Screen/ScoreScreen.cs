@@ -9,6 +9,8 @@ using GameNuclex.NuclexPlus.Core;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework;
 using Microsoft.Kinect;
+using System.IO;
+using GameNuclex.IO;
 
 namespace GameNuclex.Screen
 {
@@ -28,17 +30,22 @@ namespace GameNuclex.Screen
         Cursor cursor;
         ProgressBar progressBar;
 
+        string HighScoreMessage;
+
         private bool isCollide;
+
+        string DanceName;
 
         #endregion InstanceVariable
 
-        public ScoreScreen(Engine engine, int score, int perfect, int good, int bad, int miss) : base(engine) 
+        public ScoreScreen(Engine engine, int score, int perfect, int good, int bad, int miss, string danceName) : base(engine) 
         {
             this.Score = score;
             this.TotalPerfect = perfect;
             this.TotalGood = good;
             this.TotalBad = bad;
             this.TotalMiss = miss;
+            this.DanceName = danceName;
         }
 
         protected override void OnEntered()
@@ -52,7 +59,18 @@ namespace GameNuclex.Screen
             ScoreBackground = engine.content.Load<Texture2D>("image/SelectDance/pilih_screen");
 
             fontNilai = engine.content.Load<SpriteFont>("Font2");
-            
+
+            int highScore = ReadHighScore();
+            if (this.Score > highScore)
+            {
+                HighScoreMessage = "New High Score: " + this.Score;
+                WriteHighScore(this.Score);
+            }
+            else
+            {
+                HighScoreMessage = "High Score: " + highScore;
+            }
+
             cursor = new Cursor();
             cursor.Initialize(CursorImage);
 
@@ -76,6 +94,22 @@ namespace GameNuclex.Screen
 
             UpdatePlayer();
             CheckCollition(gameTime);
+        }
+
+        private int ReadHighScore()
+        {
+            if (File.Exists(GameIO.DIR_PATH + DanceName + "/data.rxn"))
+            {
+                string content = File.ReadAllText(GameIO.DIR_PATH + DanceName + "/data.rxn");
+
+                return int.Parse(content);
+            }
+            return 0;
+        }
+
+        private void WriteHighScore(int score)
+        {
+            File.WriteAllText(GameIO.DIR_PATH + DanceName + "/data.rxn", score.ToString());
         }
 
         private void UpdatePlayer()
@@ -106,27 +140,31 @@ namespace GameNuclex.Screen
 
             Vector2 stringLength = fontNilai.MeasureString("Nilai");
             engine.spriteBatch.DrawString(fontNilai, "Nilai", 
-                new Vector2((Background.Width) / 2 - stringLength.X / 2, 250), Color.White);
+                new Vector2((Background.Width) / 2 - stringLength.X / 2, 220), Color.White);
 
             stringLength = fontNilai.MeasureString(this.Score + "");
             engine.spriteBatch.DrawString(fontNilai, "" + this.Score,
-                new Vector2((Background.Width) / 2 - stringLength.X / 2, 290), Color.White);
+                new Vector2((Background.Width) / 2 - stringLength.X / 2, 260), Color.White);
 
             stringLength = fontNilai.MeasureString("Keren x" + this.TotalPerfect);
             engine.spriteBatch.DrawString(fontNilai, "Keren x" + this.TotalPerfect,
-                new Vector2((Background.Width) / 2 - stringLength.X / 2, 350), Color.White);
+                new Vector2((Background.Width) / 2 - stringLength.X / 2, 320), Color.White);
 
             stringLength = fontNilai.MeasureString("Bagus x" + this.TotalGood);
             engine.spriteBatch.DrawString(fontNilai, "Bagus x" + this.TotalGood,
-                new Vector2((Background.Width) / 2 - stringLength.X / 2, 390), Color.White);
+                new Vector2((Background.Width) / 2 - stringLength.X / 2, 360), Color.White);
 
             stringLength = fontNilai.MeasureString("Buruk x" + this.TotalBad);
             engine.spriteBatch.DrawString(fontNilai, "Buruk x" + this.TotalBad,
-                new Vector2((Background.Width) / 2 - stringLength.X / 2, 430), Color.White);
+                new Vector2((Background.Width) / 2 - stringLength.X / 2, 400), Color.White);
 
             stringLength = fontNilai.MeasureString("Lewat x" + this.TotalMiss);
             engine.spriteBatch.DrawString(fontNilai, "Lewat x" + this.TotalMiss,
-                new Vector2((Background.Width) / 2 - stringLength.X / 2, 470), Color.White);
+                new Vector2((Background.Width) / 2 - stringLength.X / 2, 440), Color.White);
+
+            stringLength = fontNilai.MeasureString(HighScoreMessage);
+            engine.spriteBatch.DrawString(fontNilai, HighScoreMessage,
+                new Vector2((Background.Width) / 2 - stringLength.X / 2, 500), Color.White);
 
             cursor.Draw(engine.spriteBatch);
 

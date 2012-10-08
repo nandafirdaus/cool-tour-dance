@@ -12,11 +12,10 @@ namespace GameNuclex.NuclexPlus.GameMath
     public class ScoringSystem
     {
         public enum ScoringDegree { Max, Min, Mean };
-        
         const int catPerfect = 3, catGood = 2, catBad = 1, catMiss = 0;
         int _Combo;
         const int totalComparation = 0;
-        const int limitPerfect = 15, limitGood = 12, limitBad = 8;
+        const int limitPerfect = 5, limitGood = 4, limitBad = 3, limitMiss = 2;
 
         const float permittedError = 20;
         public int Combo { get { return _Combo; } set { _Combo = value; } }
@@ -55,16 +54,16 @@ namespace GameNuclex.NuclexPlus.GameMath
         {
             Tuple<float, float, float>[] countedSkeleton = new Tuple<float, float, float>[8];
             // ElbowRight //
-            countedSkeleton[0] = Geometry.Get3DPolar(skeletonOri[NuclexEnum.WristRight], skeletonOri[NuclexEnum.ElbowRight]);
+            countedSkeleton[0] = Geometry.Get3DPolar(skeletonOri[NuclexJoint.WristRight], skeletonOri[NuclexJoint.ElbowRight]);
             countedSkeleton[1] = Geometry.Get3DPolar(skeletonData.Joints[JointType.WristRight], skeletonData.Joints[JointType.ElbowRight]);
             // ElbowLeft//
-            countedSkeleton[2] = Geometry.Get3DPolar(skeletonOri[NuclexEnum.WristLeft], skeletonOri[NuclexEnum.ElbowLeft]); ;
+            countedSkeleton[2] = Geometry.Get3DPolar(skeletonOri[NuclexJoint.WristLeft], skeletonOri[NuclexJoint.ElbowLeft]); ;
             countedSkeleton[3] = Geometry.Get3DPolar(skeletonData.Joints[JointType.WristLeft], skeletonData.Joints[JointType.ElbowLeft]);
             // KneeRight //
-            countedSkeleton[4] = Geometry.Get3DPolar(skeletonOri[NuclexEnum.HipRight], skeletonOri[NuclexEnum.KneeRight]);
+            countedSkeleton[4] = Geometry.Get3DPolar(skeletonOri[NuclexJoint.HipRight], skeletonOri[NuclexJoint.KneeRight]);
             countedSkeleton[5] = Geometry.Get3DPolar(skeletonData.Joints[JointType.HipRight], skeletonData.Joints[JointType.KneeRight]);
             // KneeLeft //
-            countedSkeleton[6] = Geometry.Get3DPolar(skeletonOri[NuclexEnum.HipLeft], skeletonOri[NuclexEnum.KneeLeft]);
+            countedSkeleton[6] = Geometry.Get3DPolar(skeletonOri[NuclexJoint.HipLeft], skeletonOri[NuclexJoint.KneeLeft]);
             countedSkeleton[7] = Geometry.Get3DPolar(skeletonData.Joints[JointType.HipLeft], skeletonData.Joints[JointType.KneeLeft]);
 
 
@@ -126,6 +125,7 @@ namespace GameNuclex.NuclexPlus.GameMath
 
 
 
+
         public static float GetSmallestDegree(float deg1, float deg2)
         {
             if (deg1 > deg2)
@@ -137,47 +137,40 @@ namespace GameNuclex.NuclexPlus.GameMath
             return Math.Min(Math.Abs(360 + deg1 - deg2), Math.Abs(deg1 - deg2));
         }
 
-        public int CompareSkeleton2D(Vector3[] skeletonOri, Skeleton skeletonData, NuclexEnum.PlayerPose pose, ScoringDegree scoringType)
+        public int CompareSkeleton2D(Vector3[] skeletonOri, Skeleton skeletonData, ScoringDegree scoringType)
         {
             float[] degree = new float[12];
-            degree[0] = Geometry.Get3JointPolar(skeletonOri[NuclexEnum.ElbowLeft], skeletonOri[NuclexEnum.WristLeft], skeletonOri[NuclexEnum.ShoulderLeft]);
-            degree[1] = Geometry.Get3JointPolar(skeletonData.Joints[JointType.ElbowLeft], skeletonData.Joints[JointType.WristLeft], skeletonData.Joints[JointType.ShoulderLeft]);
-            
-            degree[2] = Geometry.Get3JointPolar(skeletonOri[NuclexEnum.ElbowRight], skeletonOri[NuclexEnum.WristRight], skeletonOri[NuclexEnum.ShoulderRight]);
-            degree[3] = Geometry.Get3JointPolar(skeletonData.Joints[JointType.ElbowRight], skeletonData.Joints[JointType.WristRight], skeletonData.Joints[JointType.ShoulderRight]);
-            
-            degree[4] = Geometry.Get3JointPolar(skeletonOri[NuclexEnum.ShoulderLeft], skeletonOri[NuclexEnum.ElbowLeft], skeletonOri[NuclexEnum.ShoulderCenter]);
-            degree[5] = Geometry.Get3JointPolar(skeletonData.Joints[JointType.ShoulderLeft], skeletonData.Joints[JointType.ElbowLeft], skeletonData.Joints[JointType.ShoulderCenter]);
+            degree[0] = Geometry.Get2DPolar(skeletonOri[NuclexJoint.HipCenter], skeletonOri[NuclexJoint.WristLeft]);
+            degree[1] = Geometry.Get2DPolar(skeletonData.Joints[JointType.HipCenter], skeletonData.Joints[JointType.WristLeft]);
 
-            degree[6] = Geometry.Get3JointPolar(skeletonOri[NuclexEnum.ShoulderRight], skeletonOri[NuclexEnum.ElbowRight], skeletonOri[NuclexEnum.ShoulderCenter]);
-            degree[7] = Geometry.Get3JointPolar(skeletonData.Joints[JointType.ShoulderRight], skeletonData.Joints[JointType.ElbowRight], skeletonData.Joints[JointType.ShoulderCenter]);
+            degree[2] = Geometry.Get2DPolar(skeletonOri[NuclexJoint.HipCenter], skeletonOri[NuclexJoint.WristRight]);
+            degree[3] = Geometry.Get2DPolar(skeletonData.Joints[JointType.HipCenter], skeletonData.Joints[JointType.WristRight]);
 
-            if (pose.Equals(NuclexEnum.PlayerPose.Default))
-            {
-                degree[8] = Geometry.Get3JointPolar(skeletonOri[NuclexEnum.KneeRight], skeletonOri[NuclexEnum.AnkleRight], skeletonOri[NuclexEnum.HipRight]);
-                degree[9] = Geometry.Get3JointPolar(skeletonData.Joints[JointType.KneeRight], skeletonData.Joints[JointType.AnkleRight], skeletonData.Joints[JointType.HipRight]);
+            //Trace.WriteLine("Degree 3 4 : "+degree[2]+" "+degree[3]);
 
-                degree[10] = Geometry.Get3JointPolar(skeletonOri[NuclexEnum.KneeLeft], skeletonOri[NuclexEnum.AnkleLeft], skeletonOri[NuclexEnum.HipLeft]);
-                degree[11] = Geometry.Get3JointPolar(skeletonData.Joints[JointType.KneeLeft], skeletonData.Joints[JointType.AnkleLeft], skeletonData.Joints[JointType.HipLeft]);
-            }
-            else
-            {
-                degree[8] = Geometry.Get3JointPolar(skeletonOri[NuclexEnum.HipRight], skeletonOri[NuclexEnum.KneeRight], skeletonOri[NuclexEnum.HipCenter]);
-                degree[9] = Geometry.Get3JointPolar(skeletonData.Joints[JointType.HipRight], skeletonData.Joints[JointType.KneeRight], skeletonData.Joints[JointType.HipCenter]);
+            degree[4] = Geometry.Get2DPolar(skeletonOri[NuclexJoint.HipCenter], skeletonOri[NuclexJoint.AnkleLeft]);
+            degree[5] = Geometry.Get2DPolar(skeletonData.Joints[JointType.HipCenter], skeletonData.Joints[JointType.AnkleLeft]);
 
-                degree[10] = Geometry.Get3JointPolar(skeletonOri[NuclexEnum.HipLeft], skeletonOri[NuclexEnum.KneeRight], skeletonOri[NuclexEnum.HipCenter]);
-                degree[11] = Geometry.Get3JointPolar(skeletonData.Joints[JointType.HipLeft], skeletonData.Joints[JointType.KneeRight], skeletonData.Joints[JointType.HipCenter]);
-            }
-            
+            degree[6] = Geometry.Get2DPolar(skeletonOri[NuclexJoint.HipCenter], skeletonOri[NuclexJoint.AnkleRight]);
+            degree[7] = Geometry.Get2DPolar(skeletonData.Joints[JointType.HipCenter], skeletonData.Joints[JointType.AnkleRight]);
+
+            degree[8] = Geometry.Get2DPolar(skeletonOri[NuclexJoint.HipCenter], skeletonOri[NuclexJoint.ElbowLeft]);
+            degree[9] = Geometry.Get2DPolar(skeletonData.Joints[JointType.HipCenter], skeletonData.Joints[JointType.ElbowLeft]);
+
+            degree[10] = Geometry.Get2DPolar(skeletonOri[NuclexJoint.HipCenter], skeletonOri[NuclexJoint.ElbowRight]);
+            degree[11] = Geometry.Get2DPolar(skeletonData.Joints[JointType.HipCenter], skeletonData.Joints[JointType.ElbowRight]);
+
             int success = 0;
             if (scoringType == ScoringDegree.Mean)
             {
-                success += (GetSmallestDegree(degree[0], degree[1]) <= permittedError) ? 4 : 0;
-                success += (GetSmallestDegree(degree[2], degree[3]) <= permittedError) ? 4 : 0;
-                success += (GetSmallestDegree(degree[4], degree[5]) <= permittedError) ? 2 : 0;
-                success += (GetSmallestDegree(degree[6], degree[7]) <= permittedError) ? 2 : 0;
-                success += (GetSmallestDegree(degree[8], degree[9]) <= permittedError) ? 3 : 0;
-                success += (GetSmallestDegree(degree[10], degree[11]) <= permittedError) ? 3 : 0;
+
+                for (int nn = 0; nn < degree.Length; nn += 2)
+                {
+                    if (GetSmallestDegree(degree[nn], degree[nn + 1]) < permittedError)
+                    {
+                        success++;
+                    }
+                }
             }
 
             if (success >= limitPerfect)
@@ -264,7 +257,7 @@ namespace GameNuclex.NuclexPlus.GameMath
                     {
                         //Trace.WriteLine("Time : " + time + " " + now.time + " " + next.time);
                         // do scoring //
-                        int result = CompareSkeleton2D(now.jointPosition, skeletonData, now.pose, usedScoringDegree);
+                        int result = CompareSkeleton2D(now.jointPosition, skeletonData, usedScoringDegree);
                         MaxCorrect = Math.Max(MaxCorrect, GetScore(result));
                         MaxCorrectCategory = Math.Max(MaxCorrectCategory, result);
                         hasChecked = true;
