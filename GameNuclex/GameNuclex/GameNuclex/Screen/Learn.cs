@@ -167,6 +167,9 @@ namespace GameNuclex.Screen
                 }
             }
 
+
+            base.engine.spriteBatch.Draw(engine.nuclexKinect.DepthImage, new Rectangle(0, 0, 200, 150), Color.White);
+
             //if (!hasPlayed && player.State == MediaState.Stopped)
             //{
             //    base.engine.spriteBatch.Draw(LoadingBackground, new Rectangle(0, 0, LoadingBackground.Width, LoadingBackground.Height),
