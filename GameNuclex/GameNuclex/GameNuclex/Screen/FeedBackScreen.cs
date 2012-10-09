@@ -9,6 +9,7 @@ using GameNuclex.NuclexPlus.Core;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework;
 using Microsoft.Kinect;
+using System.Diagnostics;
 
 namespace GameNuclex.Screen
 {
@@ -21,8 +22,13 @@ namespace GameNuclex.Screen
         Texture2D CursorImage;
         Texture2D ScoreBackground;
         private KinectSensor KinectDevice;
+
+        int Score, TotalData;
         
         SpriteFont fontNilai;
+
+        string FeedBack;
+        string DanceName;
 
         Cursor cursor;
         ProgressBar progressBar;
@@ -31,9 +37,12 @@ namespace GameNuclex.Screen
 
         #endregion InstanceVariable
 
-        public FeedBackScreen(Engine engine)
+        public FeedBackScreen(Engine engine, int score, int totalData, string danceName)
             : base(engine)
         {
+            this.Score = score;
+            this.TotalData = totalData;
+            this.DanceName = danceName;
         }
 
         protected override void OnEntered()
@@ -53,6 +62,8 @@ namespace GameNuclex.Screen
 
             progressBar = new ProgressBar();
             progressBar.Initialize(engine.content.Load<Texture2D>("image/progress-bar"));
+
+            this.FeedBack = FeedBackMessage();
 
             base.OnEntered();
         }
@@ -99,13 +110,13 @@ namespace GameNuclex.Screen
                 10, Background.Height - 115, ButtonBack.Width, ButtonBack.Height)
                 , Color.White);
 
-            Vector2 stringLength = fontNilai.MeasureString("Nilai");
-            engine.spriteBatch.DrawString(fontNilai, "Nilai",
+            Vector2 stringLength = fontNilai.MeasureString("Penilaian");
+            engine.spriteBatch.DrawString(fontNilai, "Penilaian",
                 new Vector2((Background.Width) / 2 - stringLength.X / 2, 250), Color.White);
 
-            //stringLength = fontNilai.MeasureString(this.Score + "");
-            //engine.spriteBatch.DrawString(fontNilai, "" + this.Score,
-            //    new Vector2((Background.Width) / 2 - stringLength.X / 2, 290), Color.White);
+            stringLength = fontNilai.MeasureString(FeedBack);
+            engine.spriteBatch.DrawString(fontNilai, FeedBack,
+                new Vector2((Background.Width) / 2 - stringLength.X / 2, 320), Color.White);
 
             //stringLength = fontNilai.MeasureString("Keren x" + this.TotalPerfect);
             //engine.spriteBatch.DrawString(fontNilai, "Keren x" + this.TotalPerfect,
@@ -131,6 +142,30 @@ namespace GameNuclex.Screen
             }
         }
 
+        private string FeedBackMessage()
+        {
+            float grade = (Score / ((TotalData - 2) * 300)) * 100;
+            Trace.WriteLine(grade.ToString());
+            Trace.WriteLine(Score);
+            Trace.WriteLine((TotalData - 2) * 300);
+            if (grade > 80)
+            {
+                return "Gerakan anda sangat bagus";
+            }
+
+            if (grade > 60)
+            {
+                return "Gerakan anda sudah bagus";
+            }
+
+            if (grade > 40)
+            {
+                return "Gerakan anda cukup bagus. Berlatih lagi! :D";
+            }
+
+            return "Gerakan anda masih kurang bagus.\n Ayo latihan lagi. :)";
+        }
+
         private void CheckCollition(GameTime gameTime)
         {
             Rectangle rectangle1;
@@ -154,7 +189,7 @@ namespace GameNuclex.Screen
                 if (progressBar.isFull)
                 {
                     //MainMenu mainMenu = new MainMenu(engine);
-                    LearnScreen screen = new LearnScreen(engine);
+                    LearnItem screen = new LearnItem(engine, DanceName);
                     engine.manager.Switch(screen);
                 }
 

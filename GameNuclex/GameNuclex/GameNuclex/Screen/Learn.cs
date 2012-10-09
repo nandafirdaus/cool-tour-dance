@@ -29,6 +29,7 @@ namespace GameNuclex.Screen
         Thread backgroundThread;
 
         string DanceURI;
+        string DanceName;
 
         Video video;
         VideoPlayer player;
@@ -53,10 +54,11 @@ namespace GameNuclex.Screen
 
         bool hasPlayed;
 
-        public Learn(Engine engine, string danceURI)
+        public Learn(Engine engine, string danceURI, string danceName)
             : base(engine)
         {
             this.DanceURI = danceURI;
+            this.DanceName = danceName;
         }
 
         protected override void OnEntered()
@@ -145,30 +147,32 @@ namespace GameNuclex.Screen
                 //        new Vector2(engine.graphics.Viewport.Width - 125, 10.0f), Color.Yellow); 
                 // If already preview for sometime, stop preview //
 
-                if (scoringSystem.MomentPerfect)
-                {
-                    base.engine.spriteBatch.Draw(perfectImage, new Rectangle(15, 200, perfectImage.Width, perfectImage.Height),
-                        Color.White);
-                }
-                else if (scoringSystem.MomentGood)
-                {
-                    base.engine.spriteBatch.Draw(goodImage, new Rectangle(15, 200, goodImage.Width, goodImage.Height),
-                        Color.White);
-                }
-                else if (scoringSystem.MomentBad)
-                {
-                    base.engine.spriteBatch.Draw(badImage, new Rectangle(15, 200, badImage.Width, badImage.Height),
-                        Color.White);
-                }
-                else if (scoringSystem.MomentMiss)
-                {
-                    base.engine.spriteBatch.Draw(missImage, new Rectangle(15, 200, missImage.Width, missImage.Height),
-                        Color.White);
-                }
+                //if (scoringSystem.MomentPerfect)
+                //{
+                //    base.engine.spriteBatch.Draw(perfectImage, new Rectangle(15, 200, perfectImage.Width, perfectImage.Height),
+                //        Color.White);
+                //}
+                //else if (scoringSystem.MomentGood)
+                //{
+                //    base.engine.spriteBatch.Draw(goodImage, new Rectangle(15, 200, goodImage.Width, goodImage.Height),
+                //        Color.White);
+                //}
+                //else if (scoringSystem.MomentBad)
+                //{
+                //    base.engine.spriteBatch.Draw(badImage, new Rectangle(15, 200, badImage.Width, badImage.Height),
+                //        Color.White);
+                //}
+                //else if (scoringSystem.MomentMiss)
+                //{
+                //    base.engine.spriteBatch.Draw(missImage, new Rectangle(15, 200, missImage.Width, missImage.Height),
+                //        Color.White);
+                //}
+
+                base.engine.spriteBatch.Draw(engine.nuclexKinect.DepthImage,
+                    new Rectangle(engine.graphics.Viewport.Width - engine.nuclexKinect.DepthImage.Width,
+                        engine.graphics.Viewport.Height - engine.nuclexKinect.DepthImage.Height, 
+                        200, 150), Color.White);
             }
-
-
-            base.engine.spriteBatch.Draw(engine.nuclexKinect.DepthImage, new Rectangle(0, 0, 200, 150), Color.White);
 
             //if (!hasPlayed && player.State == MediaState.Stopped)
             //{
@@ -204,7 +208,7 @@ namespace GameNuclex.Screen
             {
                 //ScoreScreen scoreScreen = new ScoreScreen(engine, scoringSystem.TotalScore, scoringSystem.TotalPerfect,
                 //    scoringSystem.TotalGood, scoringSystem.TotalBad, scoringSystem.TotalMiss);
-                FeedBackScreen feedBack = new FeedBackScreen(engine);
+                FeedBackScreen feedBack = new FeedBackScreen(engine, scoringSystem.TotalScore, scoringSystem.TotalFrame, DanceName);
                 engine.manager.Switch(feedBack);
             }
         }

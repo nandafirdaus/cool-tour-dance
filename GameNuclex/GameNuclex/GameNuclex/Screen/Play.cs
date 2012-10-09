@@ -165,9 +165,12 @@ namespace GameNuclex.Screen
                     base.engine.spriteBatch.Draw(missImage, new Rectangle(15, 200, missImage.Width, missImage.Height),
                         Color.White);
                 }
-            }
 
-            base.engine.spriteBatch.Draw(engine.nuclexKinect.DepthImage, new Rectangle(0,0, 200, 150), Color.White);
+                base.engine.spriteBatch.Draw(engine.nuclexKinect.DepthImage,
+                    new Rectangle(engine.graphics.Viewport.Width - engine.nuclexKinect.DepthImage.Width,
+                        engine.graphics.Viewport.Height - engine.nuclexKinect.DepthImage.Height,
+                        200, 150), Color.White);
+            }
 
             //if (!hasPlayed && player.State == MediaState.Stopped)
             //{
@@ -217,6 +220,8 @@ namespace GameNuclex.Screen
                 //Trace.WriteLine(Geometry.Get2DPolar(playerSkeleton.Joints[JointType.HipCenter], playerSkeleton.Joints[JointType.ElbowRight]));
                 scoringSystem.UpdateTime(playerSkeleton, gameTimer.totalTime);
             //}
+
+                scoringSystem.updateSpriteScore();
         }
 
         public void DetectKeyboard()
