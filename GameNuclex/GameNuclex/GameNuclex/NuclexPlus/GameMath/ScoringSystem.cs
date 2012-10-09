@@ -8,23 +8,26 @@ using GameNuclex.Data;
 using GameNuclex.NuclexPlus.GameMath;
 using System.Diagnostics;
 using GameNuclex.NuclexPlus.Component;
+
 namespace GameNuclex.NuclexPlus.GameMath
 {
     public class ScoringSystem
     {
         public enum ScoringDegree { Max, Min, Mean };
-        
+
         const int catPerfect = 3, catGood = 2, catBad = 1, catMiss = 0;
         int _Combo;
         bool _MomentCombo;
         const int totalComparation = 0;
-        const int limitPerfect = 15, limitGood = 12, limitBad = 8;
+        const int limitPerfect = 20, limitGood = 16, limitBad = 12;
 
         const float permittedError = 20;
         public int Combo { get { return _Combo; } }
         public bool MomentCombo { get { return _MomentCombo; } }
         int _TotalPerfect, _TotalGood, _TotalBad, _TotalMiss;
         int _TotalFrame;
+        int _spriteTimer;
+        int _comboTimer;
         public int TotalPerfect { get { return _TotalPerfect; } }
         public int TotalGood { get { return _TotalGood; } }
         public int TotalBad { get { return _TotalBad; } }
@@ -68,8 +71,6 @@ namespace GameNuclex.NuclexPlus.GameMath
             // KneeLeft //
             countedSkeleton[6] = Geometry.Get3DPolar(skeletonOri[NuclexEnum.HipLeft], skeletonOri[NuclexEnum.KneeLeft]);
             countedSkeleton[7] = Geometry.Get3DPolar(skeletonData.Joints[JointType.HipLeft], skeletonData.Joints[JointType.KneeLeft]);
-
-
 
             int success = 0;
 
@@ -126,7 +127,35 @@ namespace GameNuclex.NuclexPlus.GameMath
             }
         }
 
+        public void updateSpriteScore()
+        {
+            if (this._spriteTimer > 100)
+            {
+                _MomentPerfect = false;
+                _MomentGood = false;
+                _MomentBad = false;
+                _MomentMiss = false;
 
+                this._spriteTimer = 0;
+            }
+            else
+            {
+                this._spriteTimer++;
+            }
+        }
+
+        public void updateCombo()
+        {
+            if (this._comboTimer > 100)
+            {
+                _MomentCombo = false;
+                this._comboTimer = 0;
+            }
+            else
+            {
+                this._spriteTimer++;
+            }
+        }
 
         public static float GetSmallestDegree(float deg1, float deg2)
         {
@@ -141,7 +170,7 @@ namespace GameNuclex.NuclexPlus.GameMath
 
         public int CompareSkeleton2D(Vector3[] skeletonOri, Skeleton skeletonData, NuclexEnum.PlayerPose pose, ScoringDegree scoringType)
         {
-            float[] degree = new float[12];
+            float[] degree = new float[16];
             degree[0] = Geometry.Get3JointPolar(skeletonOri[NuclexEnum.ElbowLeft], skeletonOri[NuclexEnum.WristLeft], skeletonOri[NuclexEnum.ShoulderLeft]);
             degree[1] = Geometry.Get3JointPolar(skeletonData.Joints[JointType.ElbowLeft], skeletonData.Joints[JointType.WristLeft], skeletonData.Joints[JointType.ShoulderLeft]);
             Trace.WriteLine("Siku Kiri : " + degree[1]);
@@ -153,34 +182,124 @@ namespace GameNuclex.NuclexPlus.GameMath
             Trace.WriteLine("Bahu Kiri : " + degree[5]);
             degree[6] = Geometry.Get3JointPolar(skeletonOri[NuclexEnum.ShoulderRight], skeletonOri[NuclexEnum.ElbowRight], skeletonOri[NuclexEnum.ShoulderCenter]);
             degree[7] = Geometry.Get3JointPolar(skeletonData.Joints[JointType.ShoulderRight], skeletonData.Joints[JointType.ElbowRight], skeletonData.Joints[JointType.ShoulderCenter]);
-            Trace.WriteLine("Bahu Kiri : " + degree[7]);
-            if (pose.Equals(NuclexEnum.PlayerPose.Default))
-            {
-                degree[8] = Geometry.Get3JointPolar(skeletonOri[NuclexEnum.KneeRight], skeletonOri[NuclexEnum.AnkleRight], skeletonOri[NuclexEnum.HipRight]);
-                degree[9] = Geometry.Get3JointPolar(skeletonData.Joints[JointType.KneeRight], skeletonData.Joints[JointType.AnkleRight], skeletonData.Joints[JointType.HipRight]);
+            Trace.WriteLine("Bahu Kanan : " + degree[7]);
+            degree[8] = Geometry.Get3JointPolar(skeletonOri[NuclexEnum.KneeRight], skeletonOri[NuclexEnum.AnkleRight], skeletonOri[NuclexEnum.HipRight]);
+            degree[9] = Geometry.Get3JointPolar(skeletonData.Joints[JointType.KneeRight], skeletonData.Joints[JointType.AnkleRight], skeletonData.Joints[JointType.HipRight]);
+            Trace.WriteLine("Lutut Kanan : " + degree[9]);
+            degree[10] = Geometry.Get3JointPolar(skeletonOri[NuclexEnum.KneeLeft], skeletonOri[NuclexEnum.AnkleLeft], skeletonOri[NuclexEnum.HipLeft]);
+            degree[11] = Geometry.Get3JointPolar(skeletonData.Joints[JointType.KneeLeft], skeletonData.Joints[JointType.AnkleLeft], skeletonData.Joints[JointType.HipLeft]);
+            Trace.WriteLine("Lutut Kiri : " + degree[11]);
+            degree[12] = Geometry.Get3JointPolar(skeletonOri[NuclexEnum.HipRight], skeletonOri[NuclexEnum.KneeRight], skeletonOri[NuclexEnum.HipCenter]);
+            degree[13] = Geometry.Get3JointPolar(skeletonData.Joints[JointType.HipRight], skeletonData.Joints[JointType.KneeRight], skeletonData.Joints[JointType.HipCenter]);
+            Trace.WriteLine("Pinggang Kanan : " + degree[13]);
+            degree[14] = Geometry.Get3JointPolar(skeletonOri[NuclexEnum.HipLeft], skeletonOri[NuclexEnum.KneeLeft], skeletonOri[NuclexEnum.HipCenter]);
+            degree[15] = Geometry.Get3JointPolar(skeletonData.Joints[JointType.HipLeft], skeletonData.Joints[JointType.KneeLeft], skeletonData.Joints[JointType.HipCenter]);
+            Trace.WriteLine("Pinggang Kiri : " + degree[15]);
 
-                degree[10] = Geometry.Get3JointPolar(skeletonOri[NuclexEnum.KneeLeft], skeletonOri[NuclexEnum.AnkleLeft], skeletonOri[NuclexEnum.HipLeft]);
-                degree[11] = Geometry.Get3JointPolar(skeletonData.Joints[JointType.KneeLeft], skeletonData.Joints[JointType.AnkleLeft], skeletonData.Joints[JointType.HipLeft]);
-            }
-            else
-            {
-                degree[8] = Geometry.Get3JointPolar(skeletonOri[NuclexEnum.HipRight], skeletonOri[NuclexEnum.KneeRight], skeletonOri[NuclexEnum.HipCenter]);
-                degree[9] = Geometry.Get3JointPolar(skeletonData.Joints[JointType.HipRight], skeletonData.Joints[JointType.KneeRight], skeletonData.Joints[JointType.HipCenter]);
+            bool correctElbowLeft = GetSmallestDegree(degree[0], degree[1]) <= 20;
+            bool correctElbowRight = GetSmallestDegree(degree[2], degree[3]) <= 20;
+            bool correctShoulderLeft = GetSmallestDegree(degree[4], degree[5]) <= 20;
+            bool correctShoulderRight = GetSmallestDegree(degree[6], degree[7]) <= 20;
+            bool correctKneeRight = GetSmallestDegree(degree[8], degree[9]) <= 10;
+            bool correctKneeLeft = GetSmallestDegree(degree[10], degree[11]) <= 10;
+            bool correctHipRight = GetSmallestDegree(degree[12], degree[13]) <= 15;
+            bool correctHipLeft = GetSmallestDegree(degree[14], degree[15]) <= 15;
 
-                degree[10] = Geometry.Get3JointPolar(skeletonOri[NuclexEnum.HipLeft], skeletonOri[NuclexEnum.KneeRight], skeletonOri[NuclexEnum.HipCenter]);
-                degree[11] = Geometry.Get3JointPolar(skeletonData.Joints[JointType.HipLeft], skeletonData.Joints[JointType.KneeRight], skeletonData.Joints[JointType.HipCenter]);
-            }
-            
             int success = 0;
-            if (scoringType == ScoringDegree.Mean)
+            // Add success point //
+            if (correctShoulderLeft)
             {
-                success += (GetSmallestDegree(degree[0], degree[1]) <= permittedError) ? 4 : 0;
-                success += (GetSmallestDegree(degree[2], degree[3]) <= permittedError) ? 4 : 0;
-                success += (GetSmallestDegree(degree[4], degree[5]) <= permittedError) ? 2 : 0;
-                success += (GetSmallestDegree(degree[6], degree[7]) <= permittedError) ? 2 : 0;
-                success += (GetSmallestDegree(degree[8], degree[9]) <= permittedError) ? 3 : 0;
-                success += (GetSmallestDegree(degree[10], degree[11]) <= permittedError) ? 3 : 0;
+                if (correctElbowLeft)
+                {
+                    success += 7;
+                }
+                else
+                {
+                    success += 3;
+                }
             }
+            else if (correctShoulderLeft == false)
+            {
+                if (correctElbowLeft)
+                {
+                    success += 1;
+                }
+                else
+                {
+                    success += 0;
+                }
+            }
+
+            if (correctShoulderRight)
+            {
+                if (correctElbowRight)
+                {
+                    success += 7;
+                }
+                else
+                {
+                    success += 3;
+                }
+            }
+            else if (correctShoulderRight == false)
+            {
+                if (correctElbowRight)
+                {
+                    success += 1;
+                }
+                else
+                {
+                    success += 0;
+                }
+            }
+
+            if (correctHipLeft)
+            {
+                if (correctKneeLeft)
+                {
+                    success += 5;
+                }
+                else
+                {
+                    success += 3;
+                }
+            }
+            else if (correctHipLeft == false)
+            {
+                if (correctKneeLeft)
+                {
+                    success += 1;
+                }
+                else
+                {
+                    success += 0;
+                }
+            }
+
+            if (correctHipRight)
+            {
+                if (correctKneeRight)
+                {
+                    success += 5;
+                }
+                else
+                {
+                    success += 3;
+                }
+            }
+            else if (correctHipRight== false)
+            {
+                if (correctKneeRight)
+                {
+                    success += 1;
+                }
+                else
+                {
+                    success += 0;
+                }
+            }
+
+
 
             if (success >= limitPerfect)
             {
@@ -201,7 +320,7 @@ namespace GameNuclex.NuclexPlus.GameMath
 
 
         }
-        
+
         public int GetScore(int result)
         {
 
@@ -236,25 +355,11 @@ namespace GameNuclex.NuclexPlus.GameMath
         bool hasChecked = false;
         int MaxCorrect = 0;
         int MaxCorrectCategory;
-        
+
         public void UpdateTime(Skeleton skeletonData, long time)
         {
 
-            if (skeletonData == null)
-            {
-                _MomentMiss = true;
-                _TotalMiss++;
-
-                // Reset local variable /
-                MaxCorrectCategory = 0;
-                MaxCorrect = 0;
-
-                hasChecked = true;
-
-
-            }
-            else
-            {
+            
 
                 if (index + 1 <= danceData.listOfFrame.Count - 1)
                 {
@@ -279,8 +384,6 @@ namespace GameNuclex.NuclexPlus.GameMath
                         index++;
                         // Reset status if movement has been checked //s
                         hasChecked = false;
-                        // Add total score //
-                        TotalScore += (MaxCorrect);
                         // Add per category score//
                         // Reset moment //
                         _MomentMiss = _MomentBad = _MomentGood = _MomentPerfect = false;
@@ -291,6 +394,8 @@ namespace GameNuclex.NuclexPlus.GameMath
                                     _MomentPerfect = true;
                                     _TotalPerfect++;
                                     _Combo++;
+                                    _comboTimer = 0;
+                                    _spriteTimer = 0;
                                     _MomentCombo = true;
                                     break;
                                 }
@@ -299,6 +404,8 @@ namespace GameNuclex.NuclexPlus.GameMath
                                     _MomentGood = true;
                                     _TotalGood++;
                                     _Combo++;
+                                    _comboTimer = 0;
+                                    _spriteTimer = 0;
                                     _MomentCombo = true;
                                     break;
                                 }
@@ -307,6 +414,7 @@ namespace GameNuclex.NuclexPlus.GameMath
                                     _MomentBad = true;
                                     _TotalBad++;
                                     _Combo = 0;
+                                    _spriteTimer = 0;
                                     _MomentCombo = false;
                                     break;
                                 }
@@ -314,12 +422,15 @@ namespace GameNuclex.NuclexPlus.GameMath
                                 {
                                     _MomentMiss = true;
                                     _TotalMiss++;
+                                    _spriteTimer = 0;
                                     _Combo = 0;
                                     _MomentCombo = false;
                                     break;
                                 }
                         }
 
+                        // Add total score //
+                        TotalScore += (MaxCorrect * (Combo > 0 ? Combo : 1));
 
 
                         // Reset local variable /
@@ -327,10 +438,7 @@ namespace GameNuclex.NuclexPlus.GameMath
                         MaxCorrect = 0;
                     }
                 }
-                else
-                {
-                    //Trace.WriteLine("SELESAI");
-                }
+                
             }
         }
     }

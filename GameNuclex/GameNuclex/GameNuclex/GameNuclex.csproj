@@ -133,9 +133,10 @@
   <ItemGroup>
     <Compile Include="Data\DanceData.cs" />
     <Compile Include="Data\DanceDataFrame.cs" />
-    <Compile Include="Data\NuclexJoint.cs" />
+    <Compile Include="Data\NuclexEnum.cs" />
     <Compile Include="IO\GameIO.cs" />
     <Compile Include="NuclexPlus\Animation\Sprite.cs" />
+    <Compile Include="NuclexPlus\Component\NuclexKinect.cs" />
     <Compile Include="NuclexPlus\Component\NuclexTimer.cs" />
     <Compile Include="NuclexPlus\Core\Engine.cs" />
     <Compile Include="NuclexPlus\GameFlow\Scene.cs" />
@@ -145,7 +146,6 @@
     <Compile Include="NuclexPlus\GUI\GUIUnit.cs" />
     <Compile Include="NuclexPlus\GUI\NuclexButton.cs" />
     <Compile Include="NuclexPlus\Input\KinectCursor.cs" />
-    <Compile Include="NuclexPlus\Component\NuclexKinect.cs" />
     <Compile Include="Object\Game\GalleryItem.cs" />
     <Compile Include="Object\NonGame\Cursor.cs" />
     <Compile Include="Object\NonGame\ProgressBar.cs" />

@@ -311,11 +311,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="data\Dance\Learn\Tari Lenggang Nyai\01\video.wmv">
-      <Name>video</Name>
-      <Importer>WmvImporter</Importer>
-      <Processor>VideoProcessor</Processor>
-    </Compile>
     <Compile Include="data\Dance\Learn\Tari Lenggang Nyai\02\video.wmv">
       <Name>video</Name>
       <Importer>WmvImporter</Importer>
@@ -376,6 +371,13 @@
       <Name>pause</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="data\Dance\Learn\Tari Lenggang Nyai\01\video.wmv">
+      <Name>video</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />

@@ -10,18 +10,21 @@ namespace GameNuclex.NuclexPlus.Component
 {
     public class NuclexKinect
     {
-        public KinectSensor Kinect {
+        public KinectSensor Kinect
+        {
             get { return this._Kinect; }
-            set 
+            set
             {
                 if (this._Kinect != value)
                 {
-                    if (this._Kinect != null) {
+                    if (this._Kinect != null)
+                    {
                         UninitializeKinectSensor(this._Kinect);
                         this._Kinect = null;
                     }
 
-                    if (value != null && value.Status == KinectStatus.Connected) {
+                    if (value != null && value.Status == KinectStatus.Connected)
+                    {
                         this._Kinect = value;
                         InitializeKinectSensor(this._Kinect);
                     }
@@ -33,7 +36,8 @@ namespace GameNuclex.NuclexPlus.Component
 
         private void InitializeKinectSensor(KinectSensor kinectSensor)
         {
-            if (kinectSensor != null) {
+            if (kinectSensor != null)
+            {
                 kinectSensor.ColorStream.Enable(ColorImageFormat.RgbResolution640x480Fps30);
                 kinectSensor.DepthStream.Enable(DepthImageFormat.Resolution320x240Fps30);
                 kinectSensor.SkeletonStream.Enable(new TransformSmoothParameters()
@@ -53,14 +57,16 @@ namespace GameNuclex.NuclexPlus.Component
 
         private void UninitializeKinectSensor(KinectSensor kinectSensor)
         {
-            if (kinectSensor != null) {
+            if (kinectSensor != null)
+            {
                 kinectSensor.Stop();
                 kinectSensor.ColorFrameReady -= kinectSensor_ColorFrameReady;
                 kinectSensor.DepthFrameReady -= kinectSensor_DepthFrameReady;
                 kinectSensor.SkeletonFrameReady -= kinectSensor_SkeletonFrameReady;
             }
         }
-        public void StopKinect() {
+        public void StopKinect()
+        {
             UninitializeKinectSensor(_Kinect);
         }
         void kinectSensor_SkeletonFrameReady(object sender, SkeletonFrameReadyEventArgs e)
@@ -90,6 +96,11 @@ namespace GameNuclex.NuclexPlus.Component
                         }
 
                         _MainSkeleton = nearest;
+                        _IsSkeletonNull = (_MainSkeleton == null) ? true : false;
+                    }
+                    else
+                    {
+                        _IsSkeletonNull = true;
                     }
                 }
             }
@@ -117,8 +128,8 @@ namespace GameNuclex.NuclexPlus.Component
             }
         }
         // Depth Variable & Method //
-        private byte[] depthFrame32 = new byte[320*240*4];
-        
+        private byte[] depthFrame32 = new byte[320 * 240 * 4];
+
         private const int RedIndex = 2;
         private const int GreenIndex = 1;
         private const int BlueIndex = 0;
@@ -214,7 +225,7 @@ namespace GameNuclex.NuclexPlus.Component
             }
         }
 
-        
+
         KinectSensor _Kinect;
         Texture2D _ColorImage;
         public Texture2D ColorImage { get { return _ColorImage; } }
@@ -222,6 +233,8 @@ namespace GameNuclex.NuclexPlus.Component
         public Texture2D DepthImage { get { return _DepthImage; } }
         Skeleton _MainSkeleton;
         public Skeleton MainSkeleton { get { return _MainSkeleton; } }
+        bool _IsSkeletonNull;
+        public bool IsSkeletonNull { get { return _IsSkeletonNull; } }
 
         bool _IsDepthActive;
         bool _IsColorActive;
@@ -232,10 +245,11 @@ namespace GameNuclex.NuclexPlus.Component
         {
             this.graphicsDevice = graphicsDevice;
             this._IsSkeletonActive = this._IsDepthActive = this._IsColorActive = false;
-            DiscoverKinectSensor();            
+            DiscoverKinectSensor();
         }
 
-        public NuclexKinect(GraphicsDevice graphicsDevice, bool color, bool depth, bool skeleton) {
+        public NuclexKinect(GraphicsDevice graphicsDevice, bool color, bool depth, bool skeleton)
+        {
             this._IsColorActive = color;
             this._IsDepthActive = depth;
             this._IsSkeletonActive = skeleton;
@@ -245,7 +259,7 @@ namespace GameNuclex.NuclexPlus.Component
 
         public void DiscoverKinectSensor()
         {
-            KinectSensor.KinectSensors.StatusChanged += new EventHandler<StatusChangedEventArgs>(KinectSensors_StatusChanged);            
+            KinectSensor.KinectSensors.StatusChanged += new EventHandler<StatusChangedEventArgs>(KinectSensors_StatusChanged);
             this.Kinect = KinectSensor.KinectSensors.FirstOrDefault(x => x.Status == KinectStatus.Connected);
         }
         void KinectSensors_StatusChanged(object sender, StatusChangedEventArgs e)
@@ -274,7 +288,7 @@ namespace GameNuclex.NuclexPlus.Component
             }
         }
 
-        
+
 
     }
 }

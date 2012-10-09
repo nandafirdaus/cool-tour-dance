@@ -189,7 +189,7 @@ namespace GameNuclex.Screen
                         if (i != ItemPicture.Length - 1)
                         {
                             //string wa = allList[i].Item1.Substring(8, allList[i].Item1.Length - 13);
-                            Learn learn = new Learn(engine, allList[i].Item1.Substring(8, allList[i].Item1.Length - 22));
+                            Learn learn = new Learn(engine, allList[i].Item1.Substring(8, allList[i].Item1.Length - 22), DanceName);
                             engine.manager.Switch(learn);
                         }
                         else
